@@ -1,14 +1,21 @@
 <template>
-  <v-container fluid>
+  <span>
     <v-card>
+      <v-card-media
+        src="/static/images/header.jpg"
+        height="250px"
+      >
+        <v-card-media
+          src="/static/images/logo.jpg"
+          height="150px"
+          contain
+          absolute
+          class="wics-logo"
+        ></v-card-media>
+      </v-card-media>
       <v-container>
         <v-layout row wrap>
           <v-flex xs12>
-            <v-card-media
-              src="/static/v.png"
-              height="150px"
-              contain
-            ></v-card-media>
           </v-flex>
           <v-flex xs12>
             <v-card-title>
@@ -31,31 +38,26 @@
         </v-layout>
       </v-container>
     </v-card>
-  </v-container>
+  </span>
 </template>
 
 <script>
-export default {
-}
+  import Carousel from '../general/presentation/Carousel.vue'
+  export default {
+    components: {
+      'wics-carousel': Carousel
+    }
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+  .wics-logo {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    bottom: 10px;
+    left: 10px;
+  }
 </style>

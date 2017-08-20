@@ -29,13 +29,7 @@
       <v-spacer></v-spacer>
     </v-toolbar>
     <main>
-      <v-container fluid>
-        <v-slide-y-transition mode="out-in" appear>
-          <v-layout column align-center>
-            <router-view></router-view>
-          </v-layout>
-        </v-slide-y-transition>
-      </v-container>
+      <router-view></router-view>
     </main>
     <v-footer :fixed="fixed">
       <span>&copy; 2017</span>
