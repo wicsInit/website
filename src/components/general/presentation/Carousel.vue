@@ -3,6 +3,7 @@
     icon="stop"
     cycle
     interval="5000"
+    dark
   >
     <v-carousel-item
       v-for="(item,i) in items"
@@ -20,16 +21,13 @@
       return {
         items: [
           {
-            src: '/static/doc-images/carousel/squirrel.jpg'
+            src: '/static/images/events/cnc.png'
           },
           {
-            src: '/static/doc-images/carousel/sky.jpg'
+            src: '/static/images/'
           },
           {
-            src: '/static/doc-images/carousel/bird.jpg'
-          },
-          {
-            src: '/static/doc-images/carousel/planet.jpg'
+            src: '/static/images/'
           }
         ]
       }
@@ -48,4 +46,7 @@
 
       &-enter, &-leave, &-leave-to
         opacity: 0
+  div.carousel__right, div.carousel__left
+    div.btn__content
+      background-color: rgba(20, 20, 20, 0.5)
 </style>
