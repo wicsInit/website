@@ -1,18 +1,22 @@
 <template>
-  <v-carousel
-    icon="stop"
-    cycle
-    interval="5000"
-    dark
-  >
-    <v-carousel-item
-      v-for="(item,i) in items"
-      v-bind:key="i"
-      v-bind:src="item.src"
-      transition="fade"
-      reverseTransition="fade"
-    ></v-carousel-item>
-  </v-carousel>
+  <div>
+    <v-carousel
+      icon="stop"
+      cycle
+      :interval="5000"
+      dark
+    >
+      <slot></slot>
+      <v-carousel-item
+        v-for="(item,i) in items"
+        v-bind:key="i"
+        v-bind:src="item.src"
+        transition="fade"
+        reverseTransition="fade"
+      ></v-carousel-item>
+    </v-carousel>
+  </div>
+
 </template>
 
 <script>
@@ -35,7 +39,7 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   #carousel-view
     .fade
       &-enter-active, &-leave-active, &-leave-to
@@ -49,4 +53,6 @@
   div.carousel__right, div.carousel__left
     div.btn__content
       background-color: rgba(20, 20, 20, 0.5)
+  div.carousel
+    overflow: visible
 </style>

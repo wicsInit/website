@@ -2,27 +2,26 @@
   <span>
     <v-card>
       <v-card-media
-        src="/static/images/header.jpg"
-        height="250px"
+        src="/static/images/events/laptop.jpg"
+        height="100%"
+        class="landing"
       >
-        <div class="wics-logo">
-
-          <v-card-media
-            src="/static/images/logo.jpg"
-            height="100px"
-            class="logo-icon"
-            contain
-            absolute
-          ></v-card-media>
-        </div>
-        <v-card-media
-          src="/static/images/favicon.jpg"
-          height="100px"
-          contain
-          absolute
-          class="wics-logo"
-        ></v-card-media>
-
+        <v-container >
+          <v-layout >
+            <v-flex xs12 md6>
+              <wics-carousel class="mt-3">
+                <div class="wics-logo">
+                  <v-card-media
+                    src="/static/images/favicon.jpg"
+                    height="40px"
+                    contain
+                    absolute
+                  ></v-card-media>
+                </div>
+              </wics-carousel>
+            </v-flex>
+          </v-layout>
+        </v-container>
       </v-card-media>
       <v-card-title>
         <v-container fluid>
@@ -57,20 +56,6 @@ Computer Science students at Ryerson University.
         </v-container>
       </v-card-title>
     </v-card>
-    <v-card class="amber --darken-1 white--text" dark>
-      <v-card-title>
-        <v-container fluid>
-          <v-layout row wrap>
-            <v-flex xs12>
-              <h3 class="white--text">Events</h3>
-            </v-flex>
-            <v-flex xs12>
-              <wics-carousel></wics-carousel>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-card-title>
-    </v-card>
   </span>
 </template>
 
@@ -88,14 +73,18 @@ Computer Science students at Ryerson University.
   .wics-logo {
     position: absolute;
     display: block;
-    width: 100px;
-    height: 100px;
-    bottom: -45px;
+    width: 40px;
+    height: 40px;
+    top: -20px;
     overflow: visible;
-    left: calc(50% - 50px);
+    left: 8px;
+    z-index: 10;
   }
   .card__media {
     overflow: visible;
+  }
+  .landing {
+    /* min-height: 100vh; */
   }
   blockquote.dark {
     border-left: 5px solid white;
