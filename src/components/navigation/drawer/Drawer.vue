@@ -33,3 +33,9 @@
     }
   }
 </script>
+
+<style scoped>
+  aside.navigation-drawer {
+    z-index: 1000;
+  }
+</style>

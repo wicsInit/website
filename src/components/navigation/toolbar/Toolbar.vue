@@ -16,4 +16,7 @@
 </script>
 
 <style scoped>
+  nav.toolbar {
+    z-index: 900;
+  }
 </style>

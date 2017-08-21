@@ -19,7 +19,9 @@ export const store = new Vuex.Store({
       fixed: false
     },
     title: 'WiCS - Ryerson',
-    name: 'WiCS'
+    name: 'WiCS',
+    page: {
+    }
   },
   mutations: {
 
