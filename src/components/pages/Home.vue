@@ -2,27 +2,64 @@
   <span>
     <v-card>
       <v-card-media
-        src="/static/images/header.jpg"
+        src="/static/images/events/laptop.jpg"
         height="250px"
       >
         <div class="wics-logo">
 
           <v-card-media
-            src="/static/images/logo.jpg"
+            src="/static/images/wics-logo.png"
             height="100px"
             class="logo-icon"
             contain
             absolute
           ></v-card-media>
         </div>
-        <v-card-media
-          src="/static/images/favicon.jpg"
-          height="100px"
-          contain
-          absolute
-          class="wics-logo"
-        ></v-card-media>
 
+        <div class="wics-event-img-slideshow">
+          <v-card-media
+            src="/static/images/events/img1.jpg"
+            height="100px"
+            contain
+            absolute
+            class="wics-logo"
+          ></v-card-media>
+          <v-card-media
+            src="/static/images/events/img2.jpg"
+            height="100px"
+            contain
+            absolute
+            class="wics-logo"
+          ></v-card-media>
+          <v-card-media
+            src="/static/images/events/img3.jpg"
+            height="100px"
+            contain
+            absolute
+            class="wics-logo"
+          ></v-card-media>
+          <v-card-media
+            src="/static/images/events/img4.jpg"
+            height="100px"
+            contain
+            absolute
+            class="wics-logo"
+          ></v-card-media>
+          <v-card-media
+            src="/static/images/events/event1.jpg"
+            height="100px"
+            contain
+            absolute
+            class="wics-logo"
+          ></v-card-media>
+          <v-card-media
+            src="/static/images/events/event2.jpg"
+            height="100px"
+            contain
+            absolute
+            class="wics-logo"
+          ></v-card-media>
+        </div>
       </v-card-media>
       <v-card-title>
         <v-container fluid>
@@ -30,8 +67,7 @@
             <v-flex xs12>
               <h3 class="black--text mt-3">RYERSON WOMEN IN COMPUTER SCIENCE</h3>
               <blockquote>
-                WiCS is a student group run by undergraduate
-Computer Science students at Ryerson University.
+                WiCS is a student group run by undergraduate Computer Science students at Ryerson University.
               </blockquote>
             </v-flex>
           </v-layout>
@@ -93,6 +129,12 @@ Computer Science students at Ryerson University.
     bottom: -45px;
     overflow: visible;
     left: calc(50% - 50px);
+  }
+
+  .wics-event-img-slideshow {
+    width: 300px;
+    hight: 200px;
+
   }
   .card__media {
     overflow: visible;
