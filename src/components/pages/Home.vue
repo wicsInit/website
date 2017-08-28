@@ -7,10 +7,10 @@
           style="background-image: url(/static/images/events/laptop.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat no-repeat;"
         >
         </div>
-        <div class="card__media__content" style="margin: auto;">
-          <v-container class="mt-3">
+        <div class="card__media__content">
+          <v-container class="mt-3" style="padding: 10px;">
             <v-layout row wrap style="margin: 0 auto; max-width: 900px;">
-              <v-flex xs12 md6 class="mb-3">
+              <v-flex xs12 md6 class="mb-3" style="position: relative; min-height: 250px;">
                 <wics-carousel>
                   <div class="wics-logo">
                     <v-card-media
@@ -47,13 +47,13 @@
               <v-flex xs12 class="mb-3">
                 <wics-card color="primary">
                   <v-flex xs12>
-                    <h3 class="white--text">Who are we?</h3>
+                    <h4 class="white--text">Who are we?</h4>
                     <blockquote class="dark mb-2">
                       Women in Computer Science (WiCS) is run by undergraduate students in the Computer Science program at Ryerson University. We want to provide a safe space and support for groups that are traditionally marginalized in the field of computer science.
                     </blockquote>
                   </v-flex>
                   <v-flex xs12>
-                    <h3 class="white--text">Our goals</h3>
+                    <h4 class="white--text">Our goals</h4>
                     <blockquote class="dark">Our goal is to encourage current students to continue learning computer science with confidence; foster retention of women and marginalized individuals through mentoring. We want to bring students together allowing them to network and socialize through events and provide opportunities for students to network with women professionals in the industry. Recruiting is also a priority to get prospective students interested in going to the STEM field. </blockquote>
                   </v-flex>
                 </wics-card>

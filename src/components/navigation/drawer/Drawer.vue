@@ -4,7 +4,6 @@
     :mini-variant="drawer.miniVariant"
     :clipped="drawer.clipped"
     v-model="drawer.model"
-    enable-resize-watcher
   >
     <v-list>
       <v-list-tile

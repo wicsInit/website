@@ -7,7 +7,7 @@ export const store = new Vuex.Store({
   state: {
     drawer: {
       clipped: false,
-      model: true,
+      model: false,
       items: [
         { icon: 'home', title: 'Home', to: '/' }
       ],

@@ -1,17 +1,13 @@
 <template>
-  <v-card :class="color" class="mb-3" :style="cardHeight" style="">
+  <v-card :class="color" class="">
     <slot name="media"></slot>
-    <v-container fluid>
-      <v-layout row wrap>
-        <v-card-title>
-          <v-container fluid>
-            <v-layout row wrap>
-              <slot></slot>
-            </v-layout>
-          </v-container>
-        </v-card-title>
-      </v-layout>
-    </v-container>
+    <v-card-title>
+      <v-container fluid style="margin: 0;">
+        <v-layout row wrap>
+          <slot></slot>
+        </v-layout>
+      </v-container>
+    </v-card-title>
     <v-card-actions :class="color+'--darken-2'" style="">
       <slot name="actions"></slot>
     </v-card-actions>

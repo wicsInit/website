@@ -1,10 +1,13 @@
 <template>
-  <div>
+  <div
+    style="position: absolute; top: 0; left: 4px; right: 4px; bottom: 0; height: 100%;"
+  >
     <v-carousel
       icon="stop"
       cycle
       :interval="5000"
       dark
+      style="height: 100%;"
     >
       <slot></slot>
       <v-carousel-item
@@ -30,9 +33,6 @@
           },
           {
             src: '/static/images/events/event2.jpg'
-          },
-          {
-            src: '/static/images/events/'
           }
         ]
       }
@@ -40,15 +40,17 @@
   }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
   div.carousel
-    div.carousel__right
+    div.carousel__right, div.carousel__left
       button
         div..btn__content
           background-color: rgba(20, 20, 20, 0.5)
-  .carousel__left
+  .carousel__left, .carousel__right
     background-color rgba(20,20,20,0.5)
   div.carousel
     background-color rgba(20,20,20,0.5)
     overflow visible
+  div.carousel__controls
+    height: 53px
 </style>
