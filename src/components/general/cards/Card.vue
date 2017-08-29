@@ -1,5 +1,5 @@
 <template>
-  <v-card :class="color" class="">
+  <v-card :class="color" raised>
     <slot name="media"></slot>
     <v-card-title>
       <v-container fluid style="margin: 0;">

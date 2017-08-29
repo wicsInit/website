@@ -4,12 +4,12 @@
       <div data-v-325040ba="" class="landing card__media">
         <div
           class="card__media__background"
-          style="background-image: url(/static/images/events/laptop.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat no-repeat;"
+          style="background-image: url(/static/images/slc-large.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat no-repeat;"
         >
         </div>
         <div class="card__media__content">
           <v-container class="mt-3" style="padding: 10px;">
-            <v-layout row wrap style="margin: 0 auto; max-width: 900px;">
+            <v-layout row wrap style="margin: 0 auto; max-width: 850px;">
               <v-flex xs12 md6 class="mb-3" style="position: relative; min-height: 250px;">
                 <wics-carousel>
                   <div class="wics-logo">
@@ -46,15 +46,33 @@
               </v-flex>
               <v-flex xs12 class="mb-3">
                 <wics-card color="primary">
+                  <v-card-media
+                    src="/static/images/header.jpg"
+                    height="250px"
+                    class="center"
+                    absolute
+                    slot="media"
+                  ></v-card-media>
                   <v-flex xs12>
                     <h4 class="white--text">Who are we?</h4>
                     <blockquote class="dark mb-2">
                       Women in Computer Science (WiCS) is run by undergraduate students in the Computer Science program at Ryerson University. We want to provide a safe space and support for groups that are traditionally marginalized in the field of computer science.
                     </blockquote>
                   </v-flex>
+                </wics-card>
+              </v-flex>
+              <v-flex xs12 sm6 class="mb-3">
+                <wics-card color="secondary">
                   <v-flex xs12>
                     <h4 class="white--text">Our goals</h4>
                     <blockquote class="dark">Our goal is to encourage current students to continue learning computer science with confidence; foster retention of women and marginalized individuals through mentoring. We want to bring students together allowing them to network and socialize through events and provide opportunities for students to network with women professionals in the industry. Recruiting is also a priority to get prospective students interested in going to the STEM field. </blockquote>
+                  </v-flex>
+                </wics-card>
+              </v-flex>
+              <v-flex xs12 md6 class="mb-3">
+                <wics-card width="md-6">
+                  <v-flex xs12>
+                    <h4 class="black--text">Updates</h4>
                   </v-flex>
                 </wics-card>
               </v-flex>
@@ -96,6 +114,7 @@
     min-height: 100vh;
   }
   blockquote.dark {
+    color: white;
     border-left: 5px solid white;
   }
   .center {
