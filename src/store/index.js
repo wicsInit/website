@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import * as firebase from 'firebase'
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
@@ -18,6 +18,7 @@ export const store = new Vuex.Store({
     footer: {
       fixed: false
     },
+    admin: null,
     page: {
       title: 'WiCS - Ryerson',
       name: 'WiCS',
@@ -75,17 +76,48 @@ export const store = new Vuex.Store({
         {
           body: {
             title: 'Updates',
-            flex: 'md6'
+            flex: 'md6',
+            alert: 'Updates here...'
           }
         }
       ]
     }
   },
   mutations: {
-
+    setAdmin (state, payload) {
+      state.admin = payload
+    }
   },
   actions: {
-
+    signAdminUp ({commit}, payload) {
+      firebase.auth().createUserWithEmailAndPassword(payload.userData.email, payload.userData.password)
+        .then(
+          admin => {
+            commit('setAdmin', admin)
+          }
+        )
+        .catch(
+          error => {
+            // commit('setError', error)
+            console.log(error)
+          }
+        )
+    },
+    signAdminIn ({commit}, payload) {
+      console.log(payload)
+      firebase.auth().signInWithEmailAndPassword(payload.email, payload.password)
+        .then(
+          admin => {
+            commit('setAdmin', admin)
+          }
+        )
+        .catch(
+          error => {
+            // commit('setError', error)
+            console.log(error)
+          }
+        )
+    }
   },
   getters: {
     drawer (state) {
@@ -102,6 +134,9 @@ export const store = new Vuex.Store({
     },
     page: state => {
       return state.page
+    },
+    admin: state => {
+      return state.admin
     }
   }
 })

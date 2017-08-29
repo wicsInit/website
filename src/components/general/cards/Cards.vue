@@ -13,9 +13,10 @@
       <!-- Card body -->
       <v-flex xs12>
         <h3 class="mt-3" :class="[cardTitleColor]">{{ card.body.title }}</h3>
-        <blockquote :class="card.body.color">
+        <blockquote :class="card.body.color" v-if="card.body.blockquote">
           {{ card.body.blockquote }}
         </blockquote>
+        <v-alert info v-if="card.body.alert" value="true">{{ card.body.alert }}</v-alert>
       </v-flex>
       <!-- Card actions -->
       <v-card-actions v-if="card.actions" :class="[cardActionsBackgroundColor]" slot="actions">

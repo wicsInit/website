@@ -14,9 +14,6 @@
 
 <script>
   export default {
-    data () {
-      return {}
-    },
     computed: {
       cardStyle () {
         return this.card.actions ? {'padding-bottom': '52px'} : {}
@@ -25,7 +22,9 @@
     props: {
       card: {
         type: Object,
-        required: true
+        default: () => {
+          return { body: { backgroundColor: 'accent' } }
+        }
       }
     }
   }
