@@ -5,9 +5,9 @@
     <v-carousel
       icon="stop"
       cycle
-      :interval="5000"
+      :interval="interval"
       dark
-      style="height: 100%;"
+      :style="carouselStyle"
     >
       <slot></slot>
       <v-carousel-item
@@ -24,6 +24,7 @@
   export default {
     data () {
       return {
+        interval: 5000,
         items: [
           {
             src: '/static/images/events/cnc.png'
@@ -35,6 +36,13 @@
             src: '/static/images/events/event2.jpg'
           }
         ]
+      }
+    },
+    computed: {
+      carouselStyle () {
+        return {
+          height: 100 + '%'
+        }
       }
     }
   }
