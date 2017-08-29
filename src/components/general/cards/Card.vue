@@ -1,5 +1,5 @@
 <template>
-  <v-card :class="color" raised>
+  <v-card :class="card.body.backgroundColor" raised :style="cardStyle">
     <slot name="media"></slot>
     <v-card-title>
       <v-container fluid style="margin: 0;">
@@ -8,9 +8,7 @@
         </v-layout>
       </v-container>
     </v-card-title>
-    <v-card-actions :class="color+'--darken-2'" style="">
-      <slot name="actions"></slot>
-    </v-card-actions>
+    <slot name="actions"></slot>
   </v-card>
 </template>
 
@@ -19,31 +17,21 @@
     data () {
       return {}
     },
-    props: {
-      color: {
-        type: String,
-        default: 'accent'
-      },
-      width: {
-        type: String,
-        default: 'xs12'
+    computed: {
+      cardStyle () {
+        return this.card.actions ? {'padding-bottom': '52px'} : {}
       }
     },
-    computed: {
-      cardHeight () {
-        return {
-          'min-height': this.width === 'xs12' ? 'auto' : '500px',
-          'max-height': this.width === 'xs12' ? 'auto' : '500px'
-        }
+    props: {
+      card: {
+        type: Object,
+        required: true
       }
     }
   }
 </script>
 
 <style scoped>
-  div.card {
-    padding-bottom: 52px;
-  }
   div.card__actions {
     height: 52px;
     position: absolute; bottom: 0; width: 100%;

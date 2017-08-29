@@ -15,14 +15,6 @@
   import Footer from './components/navigation/footer/Footer.vue'
 
   export default {
-    computed: {
-      title () {
-        return this.$store.getters.title
-      },
-      drawer () {
-        return this.$store.getters.drawer
-      }
-    },
     components: {
       'wics-nav-drawer': NavDrawer,
       'wics-toolbar': Toolbar,

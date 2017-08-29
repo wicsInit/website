@@ -1,18 +1,17 @@
 <template>
   <v-footer :fixed="footer.fixed">
-    <span>{{ name }} 2017</span>
+    <span>{{ page.name }} 2017</span>
   </v-footer>
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
     computed: {
-      name () {
-        return this.$store.getters.name
-      },
-      footer () {
-        return this.$store.getters.footer
-      }
+      ...mapGetters([
+        'page',
+        'footer'
+      ])
     }
   }
 </script>

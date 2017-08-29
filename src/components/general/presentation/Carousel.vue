@@ -54,10 +54,8 @@
   div.carousel
     div.carousel__right, div.carousel__left
       button
-        div..btn__content
+        div.btn__content
           background-color: rgba(20, 20, 20, 0.5)
-  .carousel__left, .carousel__right
-    background-color rgba(20,20,20,0.5)
   div.carousel
     background-color rgba(20,20,20,0.5)
     overflow visible
