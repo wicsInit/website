@@ -1,7 +1,6 @@
 <template>
-  <v-app light>
+  <v-app dark>
     <wics-nav-drawer></wics-nav-drawer>
-    <wics-toolbar></wics-toolbar>
     <main>
       <router-view></router-view>
     </main>
@@ -10,10 +9,6 @@
 </template>
 
 <script>
-  import NavDrawer from './components/navigation/drawer/drawer.vue'
-  import Toolbar from './components/navigation/toolbar/Toolbar.vue'
-  import Footer from './components/navigation/footer/Footer.vue'
-
   export default {
     computed: {
       title () {
@@ -24,6 +19,7 @@
       }
     },
     components: {
+      VToolbar,
       'wics-nav-drawer': NavDrawer,
       'wics-toolbar': Toolbar,
       'wics-footer': Footer

@@ -21,13 +21,34 @@
       return {
         items: [
           {
-            src: '/static/images/events/cnc.png'
+            src: '/static/images/events/img1.jpg',
+            height: '100px',
+            width: '200px'
           },
           {
-            src: '/static/images/'
+            src: '/static/images/events/img2.jpg',
+            height: '100px',
+            width: '200px'
           },
           {
-            src: '/static/images/'
+            src: '/static/images/events/img3.jpg',
+            height: '100px',
+            width: '200px'
+          },
+          {
+            src: '/static/images/events/img4.jpg',
+            height: '100px',
+            width: '200px'
+          },
+          {
+            src: '/static/images/events/event1.jpg',
+            height: '100px',
+            width: '200px'
+          },
+          {
+            src: '/static/images/events/event2.jpg',
+            height: '100px',
+            width: '200px'
           }
         ]
       }
@@ -41,8 +62,8 @@
       &-enter-active, &-leave-active, &-leave-to
         transition: .3s ease-out
         position: absolute
-        top: 0
-        left: 0
+        top: 0px
+        left: 0px
 
       &-enter, &-leave, &-leave-to
         opacity: 0

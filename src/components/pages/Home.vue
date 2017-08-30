@@ -1,9 +1,10 @@
 <template>
   <span>
     <v-card>
+<!--
       <v-card-media
         src="/static/images/events/laptop.jpg"
-        height="250px"
+        height="100vh"
       >
         <div class="wics-logo">
 
@@ -16,50 +17,57 @@
           ></v-card-media>
         </div>
 
+
+<!--
         <div class="wics-event-img-slideshow">
           <v-card-media
             src="/static/images/events/img1.jpg"
-            height="100px"
+            height="300px"
             contain
             absolute
             class="wics-logo"
           ></v-card-media>
           <v-card-media
             src="/static/images/events/img2.jpg"
-            height="100px"
+            height="300px"
             contain
             absolute
             class="wics-logo"
           ></v-card-media>
           <v-card-media
             src="/static/images/events/img3.jpg"
-            height="100px"
+            height="300px"
             contain
             absolute
             class="wics-logo"
           ></v-card-media>
           <v-card-media
             src="/static/images/events/img4.jpg"
-            height="100px"
+            height="300px"
             contain
             absolute
             class="wics-logo"
           ></v-card-media>
           <v-card-media
             src="/static/images/events/event1.jpg"
-            height="100px"
+            height="300px"
             contain
             absolute
             class="wics-logo"
           ></v-card-media>
           <v-card-media
             src="/static/images/events/event2.jpg"
-            height="100px"
+            height="300px"
             contain
             absolute
             class="wics-logo"
           ></v-card-media>
         </div>
+
+        <v-flex xs6>
+          <wics-carousel></wics-carousel>
+        </v-flex>
+
       </v-card-media>
       <v-card-title>
         <v-container fluid>
@@ -100,14 +108,17 @@
             <v-flex xs12>
               <h3 class="white--text">Events</h3>
             </v-flex>
-            <v-flex xs12>
+            <v-flex xs6 >
               <wics-carousel></wics-carousel>
             </v-flex>
           </v-layout>
         </v-container>
       </v-card-title>
+      -->
     </v-card>
+
   </span>
+
 </template>
 
 <script>
@@ -131,14 +142,12 @@
     left: calc(50% - 50px);
   }
 
-  .wics-event-img-slideshow {
-    width: 300px;
-    hight: 200px;
 
-  }
+
   .card__media {
     overflow: visible;
   }
+
   blockquote.dark {
     border-left: 5px solid white;
   }
