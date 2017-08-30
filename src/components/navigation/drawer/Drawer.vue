@@ -1,6 +1,7 @@
 <template>
   <v-navigation-drawer
     persistent
+    temporary
     :mini-variant="drawer.miniVariant"
     :clipped="drawer.clipped"
     v-model="drawer.model"
