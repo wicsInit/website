@@ -8,17 +8,6 @@
   </v-app>
 </template>
 
-<script>
-  export default {
-    components: {
-      VToolbar,
-      'wics-nav-drawer': NavDrawer,
-      'wics-toolbar': Toolbar,
-      'wics-footer': Footer
-    }
-  }
-</script>
-
 <style lang="stylus">
   @import './stylus/main'
 </style>
