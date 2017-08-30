@@ -4,7 +4,6 @@
     :mini-variant="drawer.miniVariant"
     :clipped="drawer.clipped"
     v-model="drawer.model"
-    enable-resize-watcher
   >
     <v-list>
       <v-list-tile
@@ -25,11 +24,18 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
     computed: {
-      drawer () {
-        return this.$store.getters.drawer
-      }
+      ...mapGetters([
+        'drawer'
+      ])
     }
   }
 </script>
+
+<style scoped>
+  aside.navigation-drawer {
+    z-index: 1000;
+  }
+</style>

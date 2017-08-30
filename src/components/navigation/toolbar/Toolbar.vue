@@ -6,14 +6,18 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
     computed: {
-      drawer () {
-        return this.$store.getters.drawer
-      }
+      ...mapGetters([
+        'drawer'
+      ])
     }
   }
 </script>
 
 <style scoped>
+  nav.toolbar {
+    z-index: 900;
+  }
 </style>

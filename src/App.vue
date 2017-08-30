@@ -10,14 +10,6 @@
 
 <script>
   export default {
-    computed: {
-      title () {
-        return this.$store.getters.title
-      },
-      drawer () {
-        return this.$store.getters.drawer
-      }
-    },
     components: {
       VToolbar,
       'wics-nav-drawer': NavDrawer,

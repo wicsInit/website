@@ -1,8 +1,32 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/pages/home'
+import AuthGuard from './auth-guard'
 
 Vue.use(Router)
+
+const Home = resolve => {
+  require.ensure(['../components/pages/Home.vue'], () => {
+    resolve(require('../components/pages/Home.vue'))
+  }, 'home')
+}
+
+const Admin = resolve => {
+  require.ensure(['../components/pages/Admin.vue'], () => {
+    resolve(require('../components/pages/Admin.vue'))
+  }, 'admin')
+}
+
+const Login = resolve => {
+  require.ensure(['../components/users/Login.vue'], () => {
+    resolve(require('../components/users/Login.vue'))
+  }, 'admin')
+}
+
+const Console = resolve => {
+  require.ensure(['../components/pages/AdminConsole.vue'], () => {
+    resolve(require('../components/pages/AdminConsole.vue'))
+  }, 'console')
+}
 
 export default new Router({
   routes: [
@@ -10,6 +34,29 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: Admin,
+      children: [
+        {
+          path: '',
+          name: 'adminLanding',
+          beforeEnter: AuthGuard
+        },
+        {
+          path: 'console',
+          name: 'adminConsole',
+          beforeEnter: AuthGuard,
+          component: Console
+        },
+        {
+          path: 'login',
+          name: 'adminLogin',
+          component: Login
+        }
+      ]
     }
   ],
   mode: 'history'
