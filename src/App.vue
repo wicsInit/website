@@ -1,6 +1,7 @@
 <template>
   <v-app light>
     <wics-nav-drawer></wics-nav-drawer>
+    <wics-toolbar></wics-toolbar>
     <main>
       <router-view></router-view>
     </main>

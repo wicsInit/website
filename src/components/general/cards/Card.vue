@@ -3,9 +3,7 @@
     <slot name="media"></slot>
     <v-card-title>
       <v-container fluid style="margin: 0;">
-        <v-layout row wrap>
-          <slot></slot>
-        </v-layout>
+        <slot></slot>
       </v-container>
     </v-card-title>
     <slot name="actions"></slot>
