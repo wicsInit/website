@@ -1,4 +1,5 @@
 <template>
+
   <v-card>
     <div data-v-325040ba="" class="landing card__media">
       <!-- Home background -->
@@ -15,8 +16,8 @@
               <wics-carousel>
                 <div class="wics-logo">
                   <v-card-media
-                    src="/static/images/favicon.jpg"
-                    height="40px"
+                    src="/static/images/logo-white.png"
+                    height="40"
                     class="center"
                     contain
                     absolute
