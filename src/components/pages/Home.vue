@@ -7,9 +7,15 @@
         :style="backgroundStyle"
       >
       </div>
-      <div class="card__media__content">
-        <v-container class="mt-3" style="padding: 10px;">
-          <v-layout row wrap style="margin: 0 auto; max-width: 850px;">
+      <div class="card__media__content" style="padding-top: 28px;">
+        <v-container class="mt-3">
+          <v-layout row wrap style="margin: 0 auto; max-width: 1100px;">
+            <v-flex xs12 class="mb-3">
+              <img
+                slot="media"
+                src="/static/images/WiCS-Banner-center.png"
+              >
+            </v-flex>
             <!-- Home carousel -->
             <v-flex xs12 md6 class="mb-3" style="position: relative; min-height: 250px;">
               <wics-carousel>
@@ -25,7 +31,7 @@
               </wics-carousel>
             </v-flex>
             <!-- Home cards -->
-            <wics-cards v-for="card in page.cards" :card="card"></wics-cards>
+            <wics-cards v-for="card in page.cards" :card="card" :key="card.body.title"></wics-cards>
           </v-layout>
         </v-container>
       </div>
@@ -42,7 +48,8 @@
   export default {
     data () {
       return {
-        backgroundSrc: '/static/images/slc-large-min.jpg'
+        picker: null,
+        backgroundSrc: '/static/images/slc-large-min-bright.jpg'
       }
     },
     computed: {
@@ -53,7 +60,7 @@
         return {
           'background-image': 'url("' + this.backgroundSrc + '")',
           'background-size': 'cover',
-          'background-position': 'center center',
+          'background-position': 'center unset',
           'background-repeat': 'no-repeat no-repeat'
         }
       }

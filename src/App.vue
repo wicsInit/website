@@ -2,7 +2,7 @@
   <v-app light>
     <wics-nav-drawer></wics-nav-drawer>
     <wics-toolbar></wics-toolbar>
-    <main>
+    <main style="padding-top: 0px;">
       <router-view></router-view>
     </main>
     <wics-footer></wics-footer>
