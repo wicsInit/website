@@ -1,75 +1,90 @@
 <template>
-  <v-card class="grey lighten-5" flat>
-    <!-- add the banner for the header -->
-    <v-toolbar dark class="primary elevation-0" extended>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
+  <v-navigation-drawer
+    persistent
+    temporary
+    :mini-variant="drawer.miniVariant"
+    :clipped="drawer.clipped"
+    v-model="drawer.model"
+  >
+    <v-toolbar flat class="transparent" dense>
+      <v-list class="pa-0">
+        <!-- WiCS logo drawer item -->
+        <v-list-tile avatar>
+          <v-list-tile-avatar>
+            <img src="/static/images/wics-logo.png"/>
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title>WiCS</v-list-tile-title>
+          </v-list-tile-content>
+          <!-- Toggle mini button -->
+          <v-list-tile-action>
+            <v-btn icon @click.native.stop="drawer.miniVariant = !drawer.miniVariant">
+              <v-icon>chevron_left</v-icon>
+            </v-btn>
+          </v-list-tile-action>
+        </v-list-tile>
+      </v-list>
     </v-toolbar>
-  <!-- wics team pic in the bg but for now use the SLC pic in black and white-->
-    <v-layout row>
-      <v-flex xs8 offset-xs2>
-        <v-card class="card--flex-toolbar">
-          <v-toolbar card class="white" prominent>
-            <v-toolbar-title class="body-2 grey--text">WiCS</v-toolbar-title>
-            <v-spacer></v-spacer>
-          </v-toolbar>
-          <!-- images of the lastest events -->
-          <v-carousel>
-            <v-carousel-item v-for="(item,i) in items" v-bind:src="item.src" :key="i"></v-carousel-item>
-          </v-carousel>
-
-          <v-divider></v-divider>
-          <v-card-text style="height: 200px;">RYERSON WOMEN IN COMPUTER SCIENCE
-            WiCS is a student group run by undergraduate Computer Science students at Ryerson University.</v-card-text>
-          <v-divider></v-divider>
-          <v-card-text style="height: 200px;">Who we are
-            Women in Computer Science (WiCS) is run by undergraduate students in the Computer Science program at Ryerson University. We want to provide a safe space and support for groups that are traditionally marginalized in the field of computer science.cience students at Ryerson University.</v-card-text>
-          <v-divider></v-divider>
-          <v-card-text style="height: 200px;">Our goals
-            Our goal is to encourage current students to continue learning computer science with confidence; foster retention of women and marginalized individuals through mentoring. We want to bring students together allowing them to network and socialize through events and provide opportunities for students to network with women professionals in the industry. Recruiting is also a priority to get prospective students interested in going to the STEM field.</v-card-text>
-          <v-divider></v-divider>
-          <v-card-text style="height: 200px;">updates </v-card-text>
-
-
-        </v-card>
-
-      </v-flex>
-
-    </v-layout>
-
-
-
-  </v-card>
+    <v-divider></v-divider>
+    <v-list class="pa-0">
+      <!-- Drawer items container -->
+      <v-list-group
+        v-if=""
+        v-for="(item, i) in drawer.items"
+        :value="item.active"
+        v-bind:key="item.title"
+      >
+        <v-list-tile
+          value="true"
+          :key="i"
+          :to="item.to"
+          slot="item"
+          @click=""
+        >
+          <!-- Drawer items -->
+          <v-list-tile-action>
+            <v-icon light>{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+          <!-- Drawer item title -->
+          <v-list-tile-content>
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+          </v-list-tile-content>
+          <!-- Drop down icon action -->
+          <v-list-tile-action v-if="item.items">
+            <v-icon>keyboard_arrow_down</v-icon>
+          </v-list-tile-action>
+        </v-list-tile>
+        <!-- Drawer Sub items -->
+        <v-list-tile v-for="subItem in item.items" v-bind:key="subItem.title" @click="">
+          <v-list-tile-action>
+            <v-icon light>{{ subItem.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
+          </v-list-tile-content>
+          <v-list-tile-action>
+            <v-icon>{{ subItem.action }}</v-icon>
+          </v-list-tile-action>
+        </v-list-tile>
+      </v-list-group>
+    </v-list>
+  </v-navigation-drawer>
 </template>
 
-
-<style>
-  .card--flex-toolbar {
-    margin-top: -64px;
-  }
-
-</style>
-
 <script>
+  import { mapGetters } from 'vuex'
   export default {
-    data () {
-      return {
-        interval: 5000,
-        items: [
-          {
-            src: '/static/images/events/cnc.png'
-          },
-          {
-            src: '/static/images/events/img1.jpg'
-          },
-          {
-            src: '/static/images/events/event2.jpg'
-          }
-        ]
-      }
+    //
+    computed: {
+      ...mapGetters([
+        'drawer'
+      ])
     }
   }
 </script>
 
-
-
-
+<style scoped>
+  aside.navigation-drawer {
+    z-index: 1000;
+  }
+</style>

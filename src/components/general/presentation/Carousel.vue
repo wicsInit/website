@@ -29,13 +29,19 @@
         interval: 5000,
         items: [
           {
+            src: '/static/images/events/event1.jpg'
+          },
+          {
+            src: '/static/images/events/img2.jpg'
+          },
+          {
             src: '/static/images/events/cnc.png'
           },
           {
-            src: '/static/images/events/img1.jpg'
+            src: '/static/images/events/img3.jpg'
           },
           {
-            src: '/static/images/events/event2.jpg'
+            src: '/static/images/events/img1.jpg'
           }
         ]
       }
