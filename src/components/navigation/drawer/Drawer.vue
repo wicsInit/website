@@ -36,6 +36,7 @@
 <script>
   import List from '../../general/lists/List.vue'
   import { mapGetters } from 'vuex'
+  import componentConfig from '../../../data/componentConfig'
 
   export default {
     computed: {
@@ -44,7 +45,7 @@
       ])
     },
     components: {
-      'wics-list': List
+      [componentConfig.list]: List
     }
   }
 </script>

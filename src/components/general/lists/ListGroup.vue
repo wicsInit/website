@@ -16,6 +16,7 @@
 
 <script>
   import ListTile from './ListTile.vue'
+  import componentConfig from '../../../data/componentConfig'
 
   export default {
     props: {
@@ -30,7 +31,7 @@
       }
     },
     components: {
-      'wics-list-tile': ListTile
+      [componentConfig.listTile]: ListTile
     }
   }
 </script>

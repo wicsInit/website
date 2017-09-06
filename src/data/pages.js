@@ -1,3 +1,5 @@
+import componentConfig from './componentConfig'
+
 export default [
   // home route data
   {
@@ -13,7 +15,7 @@ export default [
           title: 'RYERSON WOMEN IN COMPUTER SCIENCE',
           components: [
             {
-              tag: 'wics-blockquote',
+              tag: componentConfig.blockquote,
               data: {
                 text: 'WiCS is a student group run by undergraduate Computer Science students at Ryerson University.'
               }
@@ -44,7 +46,7 @@ export default [
           title: 'Who we are',
           components: [
             {
-              tag: 'wics-blockquote',
+              tag: componentConfig.blockquote,
               data: {
                 text: 'Women in Computer Science (WiCS) is run by undergraduate students in the' +
 ' Computer Science program at Ryerson University. We want to provide a safe space and ' +
@@ -62,7 +64,7 @@ export default [
           title: 'Our goals',
           components: [
             {
-              tag: 'wics-blockquote',
+              tag: componentConfig.blockquote,
               data: {
                 text: 'Our goal is to encourage current students to continue learning computer science with confidence; ' +
 'foster retention of women and marginalized individuals through mentoring. We want to bring students together ' +
@@ -84,7 +86,7 @@ export default [
           flex: 'md6',
           components: [
             {
-              tag: 'wics-list',
+              tag: componentConfig.list,
               data: [
                 {
                   active: false,
@@ -125,7 +127,7 @@ export default [
               ]
             },
             {
-              tag: 'wics-alert',
+              tag: componentConfig.alert,
               data: {
                 type: 'info',
                 alert: 'Dates for the events will be finalized as they approach'

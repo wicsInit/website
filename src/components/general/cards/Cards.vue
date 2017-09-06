@@ -36,8 +36,8 @@
   import List from '../lists/List.vue'
   import Alert from '../notification/Alert.vue'
   import BlockQuote from '../text/Blockquote.vue'
-
   import { mapGetters } from 'vuex'
+  import componentConfig from '../../../data/componentConfig'
 
   export default {
     computed: {
@@ -58,10 +58,10 @@
       }
     },
     components: {
-      'wics-card': Card,
-      'wics-alert': Alert,
-      'wics-blockquote': BlockQuote,
-      'wics-list': List
+      [componentConfig.card]: Card,
+      [componentConfig.alert]: Alert,
+      [componentConfig.blockquote]: BlockQuote,
+      [componentConfig.list]: List
     }
   }
 </script>

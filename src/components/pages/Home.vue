@@ -43,10 +43,11 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
   import Card from '../general/cards/Card.vue'
   import Cards from '../general/cards/Cards.vue'
   import Carousel from '../general/presentation/Carousel.vue'
+  import { mapGetters } from 'vuex'
+  import componentConfig from '../../data/componentConfig'
 
   export default {
     data () {
@@ -69,9 +70,9 @@
       }
     },
     components: {
-      'wics-cards': Cards,
-      'wics-card': Card,
-      'wics-carousel': Carousel
+      [componentConfig.cards]: Cards,
+      [componentConfig.card]: Card,
+      [componentConfig.carousel]: Carousel
     }
   }
 </script>

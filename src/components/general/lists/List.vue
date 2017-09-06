@@ -29,6 +29,7 @@
 <script>
   import ListGroup from './ListGroup.vue'
   import ListTile from './ListTile.vue'
+  import componentConfig from '../../../data/componentConfig'
 
   export default {
     props: {
@@ -37,8 +38,8 @@
       }
     },
     components: {
-      'wics-list-group': ListGroup,
-      'wics-list-tile': ListTile
+      [componentConfig.listGroup]: ListGroup,
+      [componentConfig.listTile]: ListTile
     }
   }
 </script>
