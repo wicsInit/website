@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar fixed style="" dense style="background-color: rgba(20,20,20, 0.2);">
+  <v-toolbar fixed style="" dense style="background-color: rgba(20, 20, 20, 0.3);">
     <v-toolbar-side-icon @click.stop="drawer.model = !drawer.model" light v-if="drawer.type !== 'permanent'">
     </v-toolbar-side-icon>
     <v-spacer></v-spacer>
@@ -18,7 +18,4 @@
 </script>
 
 <style scoped>
-  nav.toolbar {
-    z-index: 900;
-  }
 </style>

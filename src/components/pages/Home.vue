@@ -7,9 +7,11 @@
         :style="backgroundStyle"
       >
       </div>
+      <!-- Home container -->
       <div class="card__media__content" style="padding-top: 28px;">
         <v-container class="mt-3">
           <v-layout row wrap style="margin: 0 auto; max-width: 1100px;">
+            <!-- App banner -->
             <v-flex xs12 class="mb-3">
               <img
                 slot="media"
