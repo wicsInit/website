@@ -1,22 +1,15 @@
 <template>
   <v-flex xs12 :class="card.body.flex" class="mb-3">
     <transition>
-      <wics-card :card="card">
-        <!-- Card media -->
-        <v-card-media
-          v-if="card.media"
-          :src="card.media.src"
-          height="250px"
-          class="center"
-          absolute
-          slot="media"
-        ></v-card-media>
+      <wics-card :data="card">
         <!-- Card body -->
         <v-flex xs12>
           <!-- Card body title -->
           <h3 class="mt-3" :class="[cardTitleColor]">{{ card.body.title }}</h3>
           <!-- Dynamic component for card components / body -->
-          <component :is="component.tag" v-for="(component, index) in card.body.components" :key="index" :data="component.data"></component>
+          <v-layout row wrap>
+            <component :is="component.tag" v-for="(component, index) in card.body.components" :key="index" :data="component.data"></component>
+          </v-layout>
         </v-flex>
         <!-- Card actions -->
         <v-card-actions v-if="card.actions" :class="[cardActionsBackgroundColor]" slot="actions">

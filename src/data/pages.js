@@ -61,6 +61,77 @@ export default [
       },
       {
         body: {
+          backgroundColor: 'white',
+          components: [
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs6 sm4 md3',
+                media: {
+                  src: '/static/images/team/deb.jpg'
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs6 sm4 md3',
+                media: {
+                  src: '/static/images/team/jojo.jpg'
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs6 sm4 md3',
+                backgroundColor: 'rgba(20,20,20, 0.5)',
+                media: {
+                  src: '/static/images/team/lisa.jpg'
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs6 sm4 md3',
+                media: {
+                  src: '/static/images/team/carolyn.jpg'
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs6 sm4 md3',
+                media: {
+                  src: '/static/images/team/mithura.jpg'
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs6 sm4 md3',
+                media: {
+                  src: '/static/images/team/prabhleen.jpg'
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs6 sm4 md3',
+                media: {
+                  src: '/static/images/team/santhu.jpg'
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        body: {
           title: 'Our goals',
           components: [
             {

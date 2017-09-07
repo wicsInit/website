@@ -20,9 +20,9 @@
               >
             </v-flex>
             <!-- Home carousel -->
-            <v-flex xs12 md6 class="mb-3" style="position: relative; min-height: 250px;">
+            <v-flex xs12 md6 class="carousel-container mb-3">
               <wics-carousel>
-                <div class="wics-logo">
+                <div class="wics-logo-container">
                   <v-card-media
                     src="/static/images/logo-white.png"
                     height="40"
@@ -79,7 +79,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .wics-logo {
+  .wics-logo-container {
     position: absolute;
     display: block;
     width: 40px;
@@ -88,6 +88,7 @@
     overflow: visible;
     left: 8px;
     z-index: 10;
+    background-color: rgba(20, 20, 20, 0.5);
   }
   .card__media {
     overflow: visible;
@@ -97,6 +98,10 @@
   }
   .center {
     margin: auto;
+  }
+  div.carousel-container {
+    position: relative;
+    min-height: 250px;
   }
   div.landing.card__media > div.card__media__background { margin: auto; }
 </style>

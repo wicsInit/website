@@ -43,3 +43,9 @@
     }
   }
 </script>
+
+<style scoped>
+  ul.list {
+    width: 100%;
+  }
+</style>
