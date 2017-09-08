@@ -15,7 +15,7 @@
           </v-list-tile-avatar>
           <v-list-tile-content>
             <v-list-tile-title>WiCS</v-list-tile-title>
-          </v-list-tile-content>
+          </v-list-tile-content>-->
           <!-- Toggle mini button -->
           <v-list-tile-action>
             <v-btn icon @click.native.stop="drawer.miniVariant = !drawer.miniVariant">

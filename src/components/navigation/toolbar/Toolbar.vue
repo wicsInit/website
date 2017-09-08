@@ -1,6 +1,6 @@
 <template>
-  <v-toolbar fixed style="" dense style="background-color: rgba(20,20,20, 0.2);">
-    <v-toolbar-side-icon @click.stop="drawer.model = !drawer.model" light v-if="drawer.type !== 'permanent'">
+  <v-toolbar fixed style="" dense style="background-color: rgba(20,20,20, 0.8);">
+    <v-toolbar-side-icon @click.stop="drawer.model = !drawer.model" light v-if="drawer.type !== 'permanent'" style=" color:white">
     </v-toolbar-side-icon>
     <v-spacer></v-spacer>
   </v-toolbar>

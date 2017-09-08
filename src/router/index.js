@@ -28,6 +28,17 @@ const Console = resolve => {
   }, 'console')
 }
 
+const Contact = resolve => {
+  require.ensure(['../components/pages/Contacts.vue'], () => {
+    resolve(require('../components/pages/Contacts.vue'))
+  }, 'contact')
+}
+
+const Executive = resolve => {
+  require.ensure(['../components/pages/Executive.vue'], () => {
+    resolve(require('../components/pages/Executive.vue'))
+  }, 'executive')
+}
 export default new Router({
   routes: [
     {
@@ -57,6 +68,16 @@ export default new Router({
           component: Login
         }
       ]
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
+    },
+    {
+      path: '/exec',
+      name: 'executive',
+      component: Executive
     }
   ],
   mode: 'history'

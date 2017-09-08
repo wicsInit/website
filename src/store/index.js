@@ -10,8 +10,8 @@ export const store = new Vuex.Store({
       model: false,
       items: [
         { icon: 'home', title: 'Home', to: '/' },
-        { icon: 'event', title: 'Events', to: '/events' },
         { icon: 'work', title: 'Executives', to: '/exec' },
+        { icon: 'event', title: 'Events', to: '/events' },
         {
           icon: 'perm_contact_calendar',
           title: 'Contact',
@@ -54,25 +54,35 @@ export const store = new Vuex.Store({
             }
           ]
         },
+        // { body: {
+        //    title: 'Who we are',
+        //    blockquote: 'Women in Computer Science (WiCS) is run by undergraduate students in the' +
+        //    ' Computer Science program at Ryerson University. We want to provide a safe space and ' +
+        //    'support for groups that are traditionally marginalized in the field of computer science.',
+        //    backgroundColor: 'primary',
+      //    color: 'white--text'
+      //  }}
         {
           body: {
-            title: 'Who we are',
-            blockquote: 'Women in Computer Science (WiCS) is run by undergraduate students in the' +
-            ' Computer Science program at Ryerson University. We want to provide a safe space and ' +
-            'support for groups that are traditionally marginalized in the field of computer science.',
-            backgroundColor: 'primary',
-            color: 'white--text'
+            title: 'Our goals',
+            blockquote: 'We are Women in Computer Science. Our mandate is to provide a safe space for ' +
+            'marginalized groups in Computer Science and encourage students to continue learning Computer ' +
+            'Science with confidence. We also want to bring students together allowing them to connect and ' +
+            'creating an inclusive space as they continue in Computer Science.',
+            backgroundColor: 'secondary',
+            color: 'white--text',
+            flex: 'md6'
           }
         },
         {
           body: {
-            title: 'Our goals',
+            title: 'Who are we? What do we do?',
             blockquote: 'Our goal is to encourage current students to continue learning computer science with confidence; ' +
             'foster retention of women and marginalized individuals through mentoring. We want to bring students together ' +
             'allowing them to network and socialize through events and provide opportunities for students to network with ' +
             'women professionals in the industry. Recruiting is also a priority to get prospective students interested in going ' +
             'to the STEM field.',
-            backgroundColor: 'secondary',
+            backgroundColor: 'primary',
             color: 'white--text',
             flex: 'md6'
           }
