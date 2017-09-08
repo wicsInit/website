@@ -12,6 +12,13 @@
       <div class="card__media__content" style="padding-top: 28px;">
         <v-container class="mt-5" style="padding: 4px;">
           <v-layout row wrap style="margin: 0 auto; max-width: 1000px;">
+            <!-- App banner -->
+            <v-flex xs12 class="mb-3">
+              <img
+                slot="media"
+                src="/static/images/WiCS-banner-center.png"
+              >
+            </v-flex>
             <!-- Home carousel -->
             <v-flex xs12 md6 class="carousel-container mb-2">
               <wics-carousel>

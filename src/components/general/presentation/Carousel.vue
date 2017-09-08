@@ -18,7 +18,7 @@
         v-for="(item,i) in items"
         v-bind:key="i"
         v-bind:src="item.src"
-        style="z-index: -1;"
+        style=""
       ></v-carousel-item>
     </v-carousel>
   </div>
