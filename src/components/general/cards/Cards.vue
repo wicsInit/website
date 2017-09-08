@@ -1,62 +1,21 @@
 <template>
-  <v-flex xs12 :class="card.body.flex" class="mb-3">
+  <v-flex xs12 :class="card.body.flex">
     <transition>
-      <wics-card :card="card">
-        <!-- Card media -->
-        <v-card-media
-          v-if="card.media"
-          :src="card.media.src"
-          height="250px"
-          class="center"
-          absolute
-          slot="media"
-        ></v-card-media>
+      <wics-card :data="card">
         <!-- Card body -->
         <v-flex xs12>
+          <!-- Card body title -->
           <h3 class="mt-3" :class="[cardTitleColor]">{{ card.body.title }}</h3>
-          <blockquote :class="card.body.color" v-if="card.body.blockquote">
-            {{ card.body.blockquote }}
-          </blockquote>
-          <div :class="card.body.color" v-if="card.body.events">
-            <v-list>
-              <!-- Drawer items container -->
-              <v-list-group
-                v-for="(item, i) in card.body.events.upcomingEvents"
-                :value="item.active"
-                v-bind:key="item.name"
-                class="mb-2"
-              >
-                <v-list-tile
-                  value="true"
-                  :key="i"
-                  slot="item"
-                  @click=""
-                >
-                  <!-- Drawer item title -->
-                  <v-list-tile-content>
-                    <v-list-tile-title>
-                      <h4 style="color: #7d7abc">{{ item.name }}</h4>
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                  <!-- Drop down icon action -->
-                  <v-list-tile-action>
-                    <v-icon>keyboard_arrow_down</v-icon>
-                  </v-list-tile-action>
-                </v-list-tile>
-                <!-- Drawer Sub items -->
-                <blockquote class="mb-2">
-                  <h7 class="black--text">{{item.time}}</h7>
-                  <p class="grey--text">{{item.description}}</p>
-                </blockquote>
-              </v-list-group>
-            </v-list>
-          </div>
-          <v-alert info v-if="card.body.alert" value="true">{{ card.body.alert }}</v-alert>
+          <!-- Dynamic component for card components / body -->
+          <v-layout row wrap>
+            <component :is="component.tag" v-for="(component, index) in card.body.components" :key="index" :data="component.data"></component>
+          </v-layout>
         </v-flex>
         <!-- Card actions -->
         <v-card-actions v-if="card.actions" :class="[cardActionsBackgroundColor]" slot="actions">
           <v-spacer></v-spacer>
-          <v-btn slot="actions" icon v-for="action in card.actions" :key="action.icon">
+          <!-- Card actions buttons -->
+          <v-btn slot="actions" icon v-for="action in card.actions" :key="action.icon" :href="action.href">
             <v-icon>{{ action.icon }}</v-icon>
           </v-btn>
         </v-card-actions>
@@ -67,7 +26,11 @@
 
 <script>
   import Card from './Card.vue'
+  import List from '../lists/List.vue'
+  import Alert from '../notification/Alert.vue'
+  import BlockQuote from '../text/Blockquote.vue'
   import { mapGetters } from 'vuex'
+  import componentConfig from '../../../data/componentConfig'
 
   export default {
     computed: {
@@ -88,13 +51,16 @@
       }
     },
     components: {
-      'wics-card': Card
+      [componentConfig.card]: Card,
+      [componentConfig.alert]: Alert,
+      [componentConfig.blockquote]: BlockQuote,
+      [componentConfig.list]: List
     }
   }
 </script>
 
 <style scoped>
-  blockquote.white--text {
-    border-left: 5px solid white;
+  ul.list--group:after {
+    background-color: white;
   }
 </style>

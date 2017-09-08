@@ -9,6 +9,7 @@
 <script>
   import * as firebase from 'firebase'
   import Card from '../general/cards/Card.vue'
+  import componentConfig from '../../data/componentConfig'
 
   export default {
     created () {
@@ -24,7 +25,7 @@
       firebase.initializeApp(config)
     },
     components: {
-      'wics-card': Card
+      [componentConfig.card]: Card
     }
   }
 </script>

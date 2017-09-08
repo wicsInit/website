@@ -9,13 +9,16 @@
       dark
       :style="carouselStyle"
     >
+      <!-- Pass in components -->
       <slot></slot>
+      <!-- Carousel items -->
       <v-carousel-item
         transition="fade"
         reverseTransition="fade"
         v-for="(item,i) in items"
         v-bind:key="i"
         v-bind:src="item.src"
+        style="z-index: -1;"
       ></v-carousel-item>
     </v-carousel>
   </div>
@@ -26,7 +29,9 @@
   export default {
     data () {
       return {
+        // carousel delay before moving to the next item
         interval: 5000,
+        // carousel images (will be passed via global state in cards later)
         items: [
           {
             src: '/static/images/events/event1.jpg'
