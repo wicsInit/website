@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import PageData from '../data/pages'
-
+import * as firebase from 'firebase'
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
-    // app drawer data model
     drawer: {
       clipped: false,
       model: false,
-      // drawer items tiles
       items: [
         { icon: 'home', title: 'Home', to: '/' },
         { icon: 'event', title: 'Events', to: '/events' },

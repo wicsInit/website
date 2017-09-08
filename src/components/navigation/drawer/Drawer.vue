@@ -17,7 +17,7 @@
           <!-- WiCS drawer tile title -->
           <v-list-tile-content>
             <v-list-tile-title>WiCS</v-list-tile-title>
-          </v-list-tile-content>
+          </v-list-tile-content>-->
           <!-- Toggle mini button -->
           <v-list-tile-action>
             <v-btn icon>

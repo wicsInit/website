@@ -24,7 +24,6 @@
               <wics-carousel>
                 <div class="wics-logo-container">
                   <v-card-media
-                    src="/static/images/logo-white.png"
                     height="40"
                     class="center"
                     contain
