@@ -7,7 +7,7 @@
     v-model="drawer.model"
   >
     <!-- Toolbar wrapper for company drawer tile -->
-    <v-toolbar flat class="transparent" dense>
+    <v-toolbar flat class="transparent">
       <v-list class="pa-0" dense>
         <!-- WiCS logo drawer item -->
         <v-list-tile avatar @click.stop="drawer.miniVariant = !drawer.miniVariant">

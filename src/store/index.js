@@ -31,12 +31,16 @@ export const store = new Vuex.Store({
     },
     /* End of app theme related data */
     // current page
-    page: null
+    page: null,
+    scroll: null
   },
   mutations: {
     // Sets the page data
     setPage (state, payload) {
       state.page = payload
+    },
+    setScroll (state, payload) {
+      state.scroll = window.pageYOffset || document.documentElement.scrollTop
     }
   },
   actions: {
@@ -65,6 +69,9 @@ export const store = new Vuex.Store({
     },
     page: state => {
       return state.page
+    },
+    scroll: state => {
+      return state.scroll
     }
   }
 })
