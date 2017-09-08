@@ -1,12 +1,22 @@
 <template>
-  <v-alert :class="data.type" value="true">{{ data.alert }}</v-alert>
+  <v-alert
+    v-if="data"
+    v-bind="alertType"
+    value="true"
+  >{{ data.alert }}</v-alert>
 </template>
 
 <script>
   export default {
     props: {
       data: {
-        type: [Object]
+        type: [Object],
+        required: true
+      }
+    },
+    computed: {
+      alertType () {
+        return this.data.type ? {[this.data.type]: true} : {info: true}
       }
     }
   }

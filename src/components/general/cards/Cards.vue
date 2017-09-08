@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs12 :class="card.body.flex" class="mb-3">
+  <v-flex xs12 :class="card.body.flex">
     <transition>
       <wics-card :data="card">
         <!-- Card body -->
@@ -15,7 +15,7 @@
         <v-card-actions v-if="card.actions" :class="[cardActionsBackgroundColor]" slot="actions">
           <v-spacer></v-spacer>
           <!-- Card actions buttons -->
-          <v-btn slot="actions" icon v-for="action in card.actions" :key="action.icon">
+          <v-btn slot="actions" icon v-for="action in card.actions" :key="action.icon" :href="action.href">
             <v-icon>{{ action.icon }}</v-icon>
           </v-btn>
         </v-card-actions>

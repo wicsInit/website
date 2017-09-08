@@ -1,23 +1,25 @@
 <template>
-  <v-footer :fixed="footer.fixed" class="py-0 px-4">
+  <v-footer :fixed="footer.fixed" class="py-0 px-4 accent">
     <v-container style="margin: 0; max-width: none" class="pa-3">
       <v-layout row wrap class="py-2">
         <v-flex xs12>
-          <v-layout row wrap>
+          <v-layout row wrap style="text-align: center;">
             <v-flex xs12>
-              <a
+              <h4 class="black--text darken-4--after"><u>Social</u></h4>
+              <v-btn
                 v-for="site in socialMedia"
                 :href="site.href"
                 v-tooltip:top="{ html: site.tooltip }"
-                class="pr-2"
+                class="px-4"
+                flat
               >
                 <v-icon class="icon--large">{{ site.icon }}</v-icon>
-              </a>
+              </v-btn>
             </v-flex>
           </v-layout>
         </v-flex>
       </v-layout>
-      <v-layout row wrap>
+      <v-layout row wrap style="text-align: center;">
         <v-flex xs12>
           <v-spacer></v-spacer>
           <span>{{ page.title }} &copy; 2017</span>

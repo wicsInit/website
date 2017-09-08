@@ -10,17 +10,10 @@
       </div>
       <!-- Home container -->
       <div class="card__media__content" style="padding-top: 28px;">
-        <v-container class="mt-3">
-          <v-layout row wrap style="margin: 0 auto; max-width: 1100px;">
-            <!-- App banner -->
-            <v-flex xs12 class="mb-3">
-              <img
-                slot="media"
-                src="/static/images/WiCS-banner-center.png"
-              >
-            </v-flex>
+        <v-container class="mt-5" style="padding: 4px;">
+          <v-layout row wrap style="margin: 0 auto; max-width: 1000px;">
             <!-- Home carousel -->
-            <v-flex xs12 md6 class="carousel-container mb-3">
+            <v-flex xs12 md6 class="carousel-container mb-2">
               <wics-carousel>
                 <div class="wics-logo-container">
                   <v-card-media
@@ -87,7 +80,6 @@
     top: -20px;
     overflow: visible;
     left: 8px;
-    z-index: 10;
     background-color: rgba(20, 20, 20, 0.5);
   }
   .card__media {

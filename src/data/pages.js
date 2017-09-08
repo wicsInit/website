@@ -31,13 +31,13 @@ export default [
           },
           {
             hint: 'Email us',
-            icon: 'fa-envelope',
-            href: 'email://wics@ryerson.ca'
+            icon: 'email',
+            href: 'mailto:wics@ryerson.ca'
           },
           {
             hint: 'Join our mailing list',
             icon: 'fa-sign-in',
-            href: ''
+            href: 'https://goo.gl/forms/E4iyutuz8tOhMbYs2'
           }
         ]
       },
@@ -60,70 +60,148 @@ export default [
         }
       },
       {
+        padding: '0px',
         body: {
-          backgroundColor: 'white',
+          backgroundColor: 'secondary',
           components: [
             {
               tag: componentConfig.card,
               data: {
-                flex: 'xs6 sm4 md3',
+                flex: 'xs12 sm6 md4 lg3',
                 media: {
-                  src: '/static/images/team/deb.jpg'
+                  content: {
+                    title: 'Deborah Mepaiyeda',
+                    p: 'Vice-President Outreach'
+                  },
+                  src: '/static/images/team/deb.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
                 }
               }
             },
             {
               tag: componentConfig.card,
               data: {
-                flex: 'xs6 sm4 md3',
+                flex: 'xs12 sm6 md4 lg3',
                 media: {
-                  src: '/static/images/team/jojo.jpg'
+                  content: {
+                    title: 'Name',
+                    p: 'Title'
+                  },
+                  src: '/static/images/team/jojo.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
                 }
               }
             },
             {
               tag: componentConfig.card,
               data: {
-                flex: 'xs6 sm4 md3',
+                flex: 'xs12 sm6 md4 lg3',
                 backgroundColor: 'rgba(20,20,20, 0.5)',
                 media: {
-                  src: '/static/images/team/lisa.jpg'
+                  content: {
+                    title: 'Lisa Wong',
+                    p: 'Vice president of academics'
+                  },
+                  src: '/static/images/team/lisa.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
                 }
               }
             },
             {
               tag: componentConfig.card,
               data: {
-                flex: 'xs6 sm4 md3',
+                flex: 'xs12 sm6 md4 lg3',
                 media: {
-                  src: '/static/images/team/carolyn.jpg'
+                  content: {
+                    title: 'Carol wang',
+                    p: 'President'
+                  },
+                  src: '/static/images/team/carolyn.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
                 }
               }
             },
             {
               tag: componentConfig.card,
               data: {
-                flex: 'xs6 sm4 md3',
+                flex: 'xs12 sm6 md4 lg3',
                 media: {
-                  src: '/static/images/team/mithura.jpg'
+                  content: {
+                    title: 'Name',
+                    p: 'Title'
+                  },
+                  src: '/static/images/team/mithura.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
                 }
               }
             },
             {
               tag: componentConfig.card,
               data: {
-                flex: 'xs6 sm4 md3',
+                flex: 'xs12 sm6 md4 lg3',
                 media: {
-                  src: '/static/images/team/prabhleen.jpg'
+                  content: {
+                    title: 'Prabhleen Kamboj',
+                    p: 'Vice-President Marketing'
+                  },
+                  src: '/static/images/team/prabhleen.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
                 }
               }
             },
             {
               tag: componentConfig.card,
               data: {
-                flex: 'xs6 sm4 md3',
+                flex: 'xs12 sm6 md4 lg3',
                 media: {
-                  src: '/static/images/team/santhu.jpg'
+                  content: {
+                    title: 'Santhoshi Akshaya Shankar',
+                    p: 'Vice-President Operations and Events'
+                  },
+                  src: '/static/images/team/santhu.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
                 }
               }
             }
@@ -146,7 +224,7 @@ export default [
               }
             }
           ],
-          backgroundColor: 'secondary',
+          backgroundColor: 'primary',
           color: 'white--text',
           flex: 'md6'
         }
@@ -164,7 +242,7 @@ export default [
                   expand: true,
                   title: 'Meet and Greet',
                   time: 'Mid September',
-                  color: '#7d7abc',
+                  color: '#3c688b',
                   description: 'Meet and Greet is an opportunity to meet and get to know the WiCS team, and our ' +
                   'plans for the school year. Also a chance to network and get to know their fellow Computer Science students.'
                 },
@@ -173,7 +251,7 @@ export default [
                   expand: true,
                   title: 'Cookie and Cram Night',
                   time: 'Late September',
-                  color: '#7d7abc',
+                  color: '#3c688b',
                   description: 'Cookies and Cram Night is an event that gives students the opportunity to connect with ' +
                   'one another while preparing for exams.  There will be students of different years which gives all ' +
                   'participants a chance to get assistance on any concepts they need clarification on and assignments ' +
@@ -185,7 +263,7 @@ export default [
                   expand: true,
                   title: 'Technical Mock Interview',
                   time: 'Last week of October to First week of November',
-                  color: '#7d7abc',
+                  color: '#3c688b',
                   description: 'In the Technology field, having strong technical skills is as essential as being able ' +
                   'to apply them in the workplace. Technical interviews allow students to apply their knowledge and show ' +
                   'their skills although not all students are fully prepared for the questions that will be asked. ' +
