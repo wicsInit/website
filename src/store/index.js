@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import * as firebase from 'firebase'
+import PageData from '../data/pages'
+
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
