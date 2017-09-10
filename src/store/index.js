@@ -7,19 +7,34 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
   state: {
     drawer: {
+      // controls if drawer is clipped type
       clipped: false,
+      // controls if drawer is open or not closed by default
       model: false,
+      // drawer items
       items: [
-        { icon: 'home', title: 'Home', to: '/' },
-        { icon: 'event', title: 'Events', to: '/events' },
-        { icon: 'work', title: 'Executives', to: '/exec' },
+        {
+          icon: 'home',
+          title: 'Home',
+          to: '/'
+        },
+        { icon: 'event',
+          title: 'Events',
+          to: '/events'
+        },
+        { icon: 'work',
+          title: 'Executives',
+          to: '/exec'
+        },
         {
           icon: 'perm_contact_calendar',
           title: 'Contact',
           to: '/contact'
         }
       ],
+      // controls if drawer is mini
       miniVariant: false,
+      // controls side of drawer
       right: true,
       rightDrawer: false
     },
@@ -27,9 +42,9 @@ export const store = new Vuex.Store({
     footer: {
       fixed: false
     },
-    /* End of app theme related data */
     // current page
     page: null,
+    // stores the scroll distance of the user in the app
     scroll: null
   },
   mutations: {
@@ -37,6 +52,7 @@ export const store = new Vuex.Store({
     setPage (state, payload) {
       state.page = payload
     },
+    // sets the scroll distance of the app
     setScroll (state, payload) {
       state.scroll = window.pageYOffset || document.documentElement.scrollTop
     }
