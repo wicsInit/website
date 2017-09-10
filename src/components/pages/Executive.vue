@@ -83,3 +83,12 @@
     })
   }
 </script>
+<!-- leave it out for now
+will add it on tuesday morning
+<style>
+  .fluid:hover{
+    background-color: black;
+    opacity: 0.8;
+  }
+</style>
+-->
