@@ -1,4 +1,5 @@
 import componentConfig from './componentConfig'
+import socialMedia from './socialMedia'
 
 export default [
   // home route data
@@ -23,23 +24,7 @@ export default [
           ],
           flex: 'md6'
         },
-        actions: [
-          {
-            hint: 'View our facebook page',
-            icon: 'fa-facebook',
-            href: 'https://www.facebook.com/ryersonwics?fref=ts'
-          },
-          {
-            hint: 'Email us',
-            icon: 'email',
-            href: 'mailto:wics@ryerson.ca'
-          },
-          {
-            hint: 'Join our mailing list',
-            icon: 'fa-sign-in',
-            href: 'https://goo.gl/forms/E4iyutuz8tOhMbYs2'
-          }
-        ]
+        actions: socialMedia
       },
       {
         body: {
