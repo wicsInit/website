@@ -5,9 +5,9 @@
         <v-flex xs12>
           <v-layout row wrap style="text-align: center;">
             <v-flex xs12>
-              <h4 class="black--text darken-4--after"><u>Social</u></h4>
               <v-btn
                 v-for="site in socialMedia"
+                :key="socialMedia.icon"
                 :href="site.href"
                 v-tooltip:top="{ html: site.tooltip }"
                 class="px-4"

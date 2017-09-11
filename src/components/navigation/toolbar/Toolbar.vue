@@ -1,7 +1,7 @@
 <template>
   <v-toolbar
     fixed
-    :style="scroll < 50 ? 'background-color: rgba(20, 20, 20, 0.5)': ''"
+    :style="scroll < 50 ? 'background-color: rgba(20, 20, 20, 0.5)' || 'white': ''"
   >
     <v-toolbar-side-icon
       @click.stop="drawer.model = !drawer.model"
@@ -24,14 +24,25 @@
     computed: {
       ...mapGetters([
         'drawer',
-        'scroll'
+        'scroll',
+        'page'
       ]),
       toolbarBackgroundColor () {
         console.log(this.scroll)
         return this.scroll < this.threshold ? {'background-color': 'rgba(20, 20, 20, 0.5)', color: 'white'} : {}
       },
       toolbarSideIcon () {
-        return this.scroll < this.threshold ? [{dark: true}] : [{dark: false}]
+        if (this.page.toolbarBackgroundColor) {
+          return this.scroll < this.threshold ? [{dark: true}] : [{dark: false}]
+        } else {
+          console.log('no toolbar color')
+          return {dark: true}
+        }
+      }
+    },
+    created () {
+      if (!this.page) {
+        this.page = {}
       }
     }
   }
@@ -39,6 +50,7 @@
 
 <style scoped>
   nav.toolbar {
-    z-index: 900;
+    -webkit-transition: color 1s, background-color 1s;
+    transition: color 1s, background-color 1s;
   }
 </style>
