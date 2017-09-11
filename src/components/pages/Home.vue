@@ -1,5 +1,4 @@
 <template>
-
   <v-card>
     <div class="landing card__media">
       <!-- Home background -->
@@ -16,7 +15,7 @@
             <v-flex xs12 class="mb-3">
               <img
                 slot="media"
-                src="/static/images/team/DSC_0163.jpg"
+                src="/static/images/team/DSC_0163-small.jpg"
               >
             </v-flex>
             <!-- Home carousel -->
