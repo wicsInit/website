@@ -1,6 +1,7 @@
 export default {
   card: 'wics-card',
   cards: 'wics-cards',
+  cardMedia: 'wics-card-media',
   alert: 'wics-alert',
   blockquote: 'wics-blockquote',
   list: 'wics-list',
@@ -9,5 +10,6 @@ export default {
   navDrawer: 'wics-nav-drawer',
   toolbar: 'wics-toolbar',
   footer: 'wics-footer',
-  carousel: 'wics-carousel'
+  carousel: 'wics-carousel',
+  loading: 'wics-loading'
 }

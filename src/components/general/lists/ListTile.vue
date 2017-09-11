@@ -1,13 +1,13 @@
 <template>
-  <v-list-tile>
+  <v-list-tile :to="tile.to" :href="tile.href" ripple>
     <!-- Drawer tile icon -->
     <v-list-tile-action v-if="tile.icon">
-      <v-icon light :style="[tileColor]">{{ tile.icon }}</v-icon>
+      <v-icon light>{{ tile.icon }}</v-icon>
     </v-list-tile-action>
     <!-- Drawer tile content / body -->
     <v-list-tile-content>
       <v-list-tile-title style="overflow-y: hidden">
-        <h5 style="margin-bottom: 0;" :style="[tileColor]">{{ tile.title }}</h5>
+        <h5 style="margin-bottom: 0;">{{ tile.title }}</h5>
       </v-list-tile-title>
     </v-list-tile-content>
     <!-- Drop down icon action / expand -->

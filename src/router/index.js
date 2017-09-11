@@ -4,6 +4,8 @@ import AuthGuard from './auth-guard'
 
 Vue.use(Router)
 
+// Router components are lazy loaded with promises
+
 const Home = resolve => {
   require.ensure(['../components/pages/Home.vue'], () => {
     resolve(require('../components/pages/Home.vue'))
@@ -39,6 +41,13 @@ const Executive = resolve => {
     resolve(require('../components/pages/Executive.vue'))
   }, 'executive')
 }
+
+const PageNotFound = resolve => {
+  require.ensure(['../components/pages/pageNotFound.vue'], () => {
+    resolve(require('../components/pages/pageNotFound.vue'))
+  }, '404')
+}
+
 export default new Router({
   routes: [
     {
@@ -48,7 +57,6 @@ export default new Router({
     },
     {
       path: '/admin',
-      name: 'admin',
       component: Admin,
       children: [
         {
@@ -78,7 +86,12 @@ export default new Router({
       path: '/exec',
       name: 'executive',
       component: Executive
+    },
+    {
+      path: '*',
+      name: '404',
+      component: PageNotFound
     }
-  ],
-  mode: 'history'
+  ]
+  // mode: 'history'
 })

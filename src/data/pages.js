@@ -9,6 +9,7 @@ export default [
     // page title
     title: 'WiCS - Ryerson',
     name: 'home',
+    toolbarBackgroundColor: 'rgba(20, 20, 20, 0.5)',
     // page cards
     cards: [
       {
@@ -45,7 +46,8 @@ export default [
         }
       },
       {
-        padding: '0px',
+        paddingContainer: '0px',
+        flat: true,
         body: {
           backgroundColor: 'secondary',
           components: [
