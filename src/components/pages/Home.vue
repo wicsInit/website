@@ -1,5 +1,4 @@
 <template>
-
   <v-card>
     <div class="landing card__media">
       <!-- Home background -->
