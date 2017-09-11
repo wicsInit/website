@@ -45,7 +45,8 @@ export const store = new Vuex.Store({
     // current page
     page: {},
     // stores the scroll distance of the user in the app
-    scroll: null
+    scroll: null,
+    loading: true
   },
   mutations: {
     // Sets the page data
@@ -55,6 +56,9 @@ export const store = new Vuex.Store({
     // sets the scroll distance of the app
     setScroll (state, payload) {
       state.scroll = window.pageYOffset || document.documentElement.scrollTop
+    },
+    setLoading (state, payload) {
+      state.loading = payload
     }
   },
   actions: {
@@ -65,6 +69,11 @@ export const store = new Vuex.Store({
       if (page) {
         commit('setPage', page)
       }
+    },
+    setLoading ({commit, state}, payload) {
+      setTimeout(() => {
+        commit('setLoading', payload)
+      }, 1200)
     }
   },
   // access state
@@ -86,6 +95,9 @@ export const store = new Vuex.Store({
     },
     scroll: state => {
       return state.scroll
+    },
+    loading: state => {
+      return state.loading
     }
   }
 })

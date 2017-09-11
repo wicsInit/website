@@ -10,7 +10,13 @@ Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
   store.dispatch('getPageData', to)
+  store.commit('setLoading', true)
   next()
+})
+
+router.afterEach(() => {
+  // chose action to give a fake 1s delay (async task) to show loading in case loading is too fast
+  store.dispatch('setLoading', false)
 })
 
 /* eslint-disable no-new */

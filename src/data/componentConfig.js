@@ -10,5 +10,6 @@ export default {
   navDrawer: 'wics-nav-drawer',
   toolbar: 'wics-toolbar',
   footer: 'wics-footer',
-  carousel: 'wics-carousel'
+  carousel: 'wics-carousel',
+  loading: 'wics-loading'
 }

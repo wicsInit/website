@@ -15,7 +15,7 @@
             <v-flex xs12 class="mb-3">
               <img
                 slot="media"
-                src="/static/images/WiCS-banner-center.png"
+                src="/static/images/WiCS-banner-center-min.png"
               >
             </v-flex>
             <!-- Home carousel -->

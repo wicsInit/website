@@ -92,6 +92,6 @@ export default new Router({
       name: '404',
       component: PageNotFound
     }
-  ],
-  mode: 'history'
+  ]
+  // mode: 'history'
 })
