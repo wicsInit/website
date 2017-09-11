@@ -1,6 +1,7 @@
 export default {
   card: 'wics-card',
   cards: 'wics-cards',
+  cardMedia: 'wics-card-media',
   alert: 'wics-alert',
   blockquote: 'wics-blockquote',
   list: 'wics-list',

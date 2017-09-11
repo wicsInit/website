@@ -1,5 +1,4 @@
 <template>
-
   <v-card>
     <div data-v-325040ba="" class="landing card__media">
       <!-- Home background -->
@@ -21,16 +20,7 @@
             </v-flex>
             <!-- Home carousel -->
             <v-flex xs12 md6 class="carousel-container mb-2">
-              <wics-carousel>
-                <div class="wics-logo-container">
-                  <v-card-media
-                    height="40"
-                    class="center"
-                    contain
-                    absolute
-                  ></v-card-media>
-                </div>
-              </wics-carousel>
+              <wics-carousel></wics-carousel>
             </v-flex>
             <!-- Home cards -->
             <wics-cards v-for="card in page.cards" :card="card" :key="card.body.title"></wics-cards>
@@ -49,6 +39,11 @@
   import componentConfig from '../../data/componentConfig'
 
   export default {
+    // removes main top padding so toolbar will cover background
+    mounted () {
+      var elements = document.getElementsByTagName('main')
+      elements[0].style['padding-top'] = '0px'
+    },
     data () {
       return {
         picker: null,

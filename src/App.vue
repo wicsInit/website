@@ -1,8 +1,8 @@
 <template>
-  <v-app light>
+  <v-app light toolbar>
     <wics-nav-drawer></wics-nav-drawer>
     <wics-toolbar></wics-toolbar>
-    <main style="padding-top: 0px;" v-scroll="setScroll">
+    <main v-scroll="setScroll">
       <router-view></router-view>
     </main>
     <wics-footer></wics-footer>

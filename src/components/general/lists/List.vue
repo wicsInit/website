@@ -1,5 +1,5 @@
 <template>
-  <v-list v-if="data">
+  <v-list v-if="data" two-line>
     <!-- Loop through tiles in list -->
     <!-- Expansion tile, prop must have items or expand property must be true -->
     <v-list-group
@@ -22,6 +22,8 @@
       :tile="tile"
       :key="i"
       v-if="!(tile.items || tile.expand)"
+      :to="tile.to"
+      :href="tile.href"
     ></wics-list-tile>
   </v-list>
 </template>

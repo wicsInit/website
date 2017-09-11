@@ -43,14 +43,14 @@ export const store = new Vuex.Store({
       fixed: false
     },
     // current page
-    page: null,
+    page: {},
     // stores the scroll distance of the user in the app
     scroll: null
   },
   mutations: {
     // Sets the page data
     setPage (state, payload) {
-      state.page = payload
+      state.page = payload || {}
     },
     // sets the scroll distance of the app
     setScroll (state, payload) {

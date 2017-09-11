@@ -207,7 +207,7 @@
   </v-layout>
 </template>
 
-<style>
+<style scoped>
   .headline-bg{
     background-color: black;
     opacity: 0.5;
