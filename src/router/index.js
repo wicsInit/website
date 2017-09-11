@@ -36,7 +36,7 @@ const Contact = resolve => {
   }, 'contact')
 }
 
-const Event = resolve => {
+const Events = resolve => {
   require.ensure(['../components/pages/Event.vue'], () => {
     resolve(require('../components/pages/Event.vue'))
   }, 'contact')
@@ -84,9 +84,9 @@ export default new Router({
       ]
     },
     {
-      path: '/event',
-      name: 'event',
-      component: Event
+      path: '/events',
+      name: 'events',
+      component: Events
     },
     {
       path: '/contact',
