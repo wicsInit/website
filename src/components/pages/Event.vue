@@ -25,7 +25,7 @@
             <!--<v-icon>search</v-icon>-->
             <!--</v-btn>-->
             <!--</v-toolbar>-->
-            <v-container style="margin-top: 100px;" fluid grid-list-md>
+            <v-container fluid grid-list-md>
               <v-layout row wrap>
                 <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card0" :key="card.title">
                   <v-card>
