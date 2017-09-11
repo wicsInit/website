@@ -36,6 +36,12 @@ const Contact = resolve => {
   }, 'contact')
 }
 
+const Events = resolve => {
+  require.ensure(['../components/pages/Event.vue'], () => {
+    resolve(require('../components/pages/Event.vue'))
+  }, 'contact')
+}
+
 const Executive = resolve => {
   require.ensure(['../components/pages/Executive.vue'], () => {
     resolve(require('../components/pages/Executive.vue'))
@@ -76,6 +82,11 @@ export default new Router({
           component: Login
         }
       ]
+    },
+    {
+      path: '/events',
+      name: 'events',
+      component: Events
     },
     {
       path: '/contact',
