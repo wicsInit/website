@@ -31,6 +31,7 @@
     text-align: center;
   }
 
+
   .fa-envelope:before{
     font-size: 400%;
     color: black;

@@ -47,7 +47,7 @@
           position: 'Co-President',
           description: 'I am a third year Computer Science student.I am passionate about Technology and how it is changing our world. Artificial Intelligence excites me and I hope to be make a positive difference in the World through it in the future.',
           funFact: 'I love all things Korean - Korean Pop, Korean Dramas, Korean Culture. Presently, I am learning to speak and write in it. I aspire to be fluent in Korean and travel there in the future.',
-          flex: 6
+          flex: 'xs12 sm6 md4 lg3'
         },
         {
           title: 'Rojin Shahba',
@@ -57,7 +57,7 @@
           position: 'VP of Communications & Corporate Relations',
           description: 'The most interesting thing about computer science to me is that we won' + 't graduate as developers, programmers, computer scientists, etc. We learn that our education journey doesn’t have a period, title nor a destination, but rather a satisfaction level. And that to me is freedom. Limitless!',
           funFact: '',
-          flex: 6
+          flex: 'xs12 sm6 md4 lg3'
         },
         {
           title: 'Hema Chudasama',
@@ -67,7 +67,7 @@
           position: 'VP Marketing',
           description: 'I' + 'm Hema, a student who entered this program with zero experience in coding, and is now grateful for the useful programming skills that have been built along this journey. I' + ' m grateful for being apart of a group of women who help break stereotypes that have been established within the field of technology',
           funFact: 'I love all things Korean - Korean Pop, Korean Dramas, Korean Culture. Presently, I am learning to speak and write in it. I aspire to be fluent in Korean and travel there in the future.',
-          flex: 6
+          flex: 'xs12 sm6 md4 lg3'
         },
         {
           title: 'Alize De Matas',
@@ -77,7 +77,7 @@
           position: 'Marketing Associate',
           description: 'Hi!!I am a second year Computer Science student. I have a passion for designing and creating any ideas I come up with. I hope to expand my creativity and imagination in the technical world of Computer Science.',
           funFact: '',
-          flex: 6
+          flex: 'xs12 sm6 md4 lg3'
         }
       ]
     })
