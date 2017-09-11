@@ -16,7 +16,7 @@
             <v-flex xs12 class="mb-3">
               <img
                 slot="media"
-                src="/static/images/team/DSC_0163.JPG"
+                src="/static/images/team/DSC_0163-small.JPG"
               >
             </v-flex>
             <!-- Home carousel -->
