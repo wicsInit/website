@@ -57,30 +57,10 @@ export default [
                 flex: 'xs12 sm6 md4 lg3',
                 media: {
                   content: {
-                    title: 'Deborah Mepaiyeda',
-                    p: 'Vice-President Outreach'
+                    title: 'Prabhleen Kamboj',
+                    p: 'Co-President'
                   },
-                  src: '/static/images/team/deb.jpg',
-                  model: false,
-                  hoverOver () {
-                    this.model = true
-                  },
-                  hoverOut () {
-                    this.model = false
-                  }
-                }
-              }
-            },
-            {
-              tag: componentConfig.card,
-              data: {
-                flex: 'xs12 sm6 md4 lg3',
-                media: {
-                  content: {
-                    title: 'Name',
-                    p: 'Title'
-                  },
-                  src: '/static/images/team/jojo.jpg',
+                  src: '/static/images/team/DSC_0090.jpg',
                   model: false,
                   hoverOver () {
                     this.model = true
@@ -98,10 +78,70 @@ export default [
                 backgroundColor: 'rgba(20,20,20, 0.5)',
                 media: {
                   content: {
+                    title: 'Deborah Mepaiyeda',
+                    p: 'Co-President'
+                  },
+                  src: '/static/images/team/DSC_0010.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs12 sm6 md4 lg3',
+                media: {
+                  content: {
+                    title: 'Rojin Shahba',
+                    p: 'VP of Communications & Corporate Relations'
+                  },
+                  src: '/static/images/team/DSC_0026.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs12 sm6 md4 lg3',
+                media: {
+                  content: {
+                    title: 'Hema Chudasama',
+                    p: 'VP Marketing'
+                  },
+                  src: '/static/images/team/DSC_0063.jpg',
+                  model: false,
+                  hoverOver () {
+                    this.model = true
+                  },
+                  hoverOut () {
+                    this.model = false
+                  }
+                }
+              }
+            },
+            {
+              tag: componentConfig.card,
+              data: {
+                flex: 'xs12 sm6 md4 lg3',
+                media: {
+                  content: {
                     title: 'Lisa Wong',
-                    p: 'Vice president of academics'
+                    p: 'VP Academics'
                   },
-                  src: '/static/images/team/lisa.jpg',
+                  src: '/static/images/team/DSC_0101.jpg',
                   model: false,
                   hoverOver () {
                     this.model = true
@@ -118,10 +158,10 @@ export default [
                 flex: 'xs12 sm6 md4 lg3',
                 media: {
                   content: {
-                    title: 'Carol wang',
-                    p: 'President'
+                    title: 'Paurali Rahevar',
+                    p: 'Vice-President Operations and Events'
                   },
-                  src: '/static/images/team/carolyn.jpg',
+                  src: '/static/images/team/DSC_0042.jpg',
                   model: false,
                   hoverOver () {
                     this.model = true
@@ -138,30 +178,10 @@ export default [
                 flex: 'xs12 sm6 md4 lg3',
                 media: {
                   content: {
-                    title: 'Name',
-                    p: 'Title'
+                    title: 'Bhoomi Patel',
+                    p: 'Vice-President Operations and Events'
                   },
-                  src: '/static/images/team/mithura.jpg',
-                  model: false,
-                  hoverOver () {
-                    this.model = true
-                  },
-                  hoverOut () {
-                    this.model = false
-                  }
-                }
-              }
-            },
-            {
-              tag: componentConfig.card,
-              data: {
-                flex: 'xs12 sm6 md4 lg3',
-                media: {
-                  content: {
-                    title: 'Prabhleen Kamboj',
-                    p: 'Vice-President Marketing'
-                  },
-                  src: '/static/images/team/prabhleen.jpg',
+                  src: '/static/images/wics-logo.png',
                   model: false,
                   hoverOver () {
                     this.model = true
@@ -179,7 +199,7 @@ export default [
                 media: {
                   content: {
                     title: 'Santhoshi Akshaya Shankar',
-                    p: 'Vice-President Operations and Events'
+                    p: 'Social Media Director'
                   },
                   src: '/static/images/team/santhu.jpg',
                   model: false,

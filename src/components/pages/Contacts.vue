@@ -14,9 +14,9 @@
           <v-layout justify-space-around>
           <span class="group pa-2">
             <a href="https://www.facebook.com/ryersonwics?fref=ts"><v-icon x-large>fa-facebook</v-icon></a>
-            <v-icon x-large>fa-twitter</v-icon>
-            <v-icon x-large>fa-instagram</v-icon>
-            <v-icon x-large>fa-envelope</v-icon>
+            <a href="https://twitter.com/ryersonwics?lang=en"><v-icon x-large>fa-twitter</v-icon></a>
+            <a href="https://www.instagram.com/ryerson_wics/"><v-icon x-large>fa-instagram</v-icon></a>
+            <a href="mailto:your-name@email-address.com?"><v-icon x-large>fa-envelope</v-icon></a>
             <a href="https://ca.linkedin.com/company/ryersonwics"><v-icon x-large>fa-linkedin</v-icon></a>
           </span>
           </v-layout>
