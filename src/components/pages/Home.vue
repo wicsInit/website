@@ -16,7 +16,7 @@
             <v-flex xs12 class="mb-3">
               <img
                 slot="media"
-                src="/static/images/team/DSC_0163-small.JPG"
+                src="/static/images/team/DSC_0163.jpg"
               >
             </v-flex>
             <!-- Home carousel -->
@@ -59,7 +59,7 @@
         return {
           'background-image': 'url("' + this.backgroundSrc + '")',
           'background-size': 'cover',
-          'background-position': 'center unset',
+          'background-position': 'center center',
           'background-repeat': 'no-repeat no-repeat'
         }
       }
