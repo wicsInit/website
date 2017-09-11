@@ -1,223 +1,94 @@
 <template>
-  <v-layout>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card>
-        <!-- Executive Team Picture of 2017 -->
-        <v-card-media
-          class="white--text"
-          height="200px"
-          src="/static/images/events/event1.jpg"
-        >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <div class="headline-bg">
-                  <span class="headline">Executive Team</span>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">WiCS Executive Team of 2017</span><br>
-            <span>Ryerson University</span><br>
-            <span>Berif description of the team ..... </span>
-          </div>
-        </v-card-title>
-      </v-card>
-
-      <!-- Rojin -->
-      <v-card>
-        <v-card-media
-          class="white--text"
-          height="200px"
-        >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <div class="headline-bg">
-                  <span class="headline">Rojin Shahba
-</span>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">WiCS Executive Team of 2017</span><br>
-            <span>Ryerson University</span><br>
-            <span>Berif description of the team ..... </span>
-          </div>
-        </v-card-title>
-      </v-card>
-
-      <!-- Paurali -->
-      <v-card>
-        <v-card-media
-          class="white--text"
-          height="200px"
+  <div>
+    <v-container fluid grid-list-md class="grey lighten-4">
+      <v-layout row wrap>
+        <v-flex
+          v-bind="{ [`xs${card.flex}`]: true }"
+          v-for="card in cards"
+          :key="card.title"
           >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <div class="headline-bg">
-                  <span class="headline">Paurali Rahevar
-</span>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">WiCS Executive Team of 2017</span><br>
-            <span>Ryerson University</span><br>
-            <span>Berif description of the team ..... </span>
-          </div>
-        </v-card-title>
-      </v-card>
 
-      <!-- Louise -->
-      <v-card>
-        <v-card-media
-          class="white--text"
-          height="200px"
-          >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <div class="headline-bg">
-                  <span class="headline">Louise Marquez</span>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">WiCS Executive Team of 2017</span><br>
-            <span>Ryerson University</span><br>
-            <span>Berif description of the team ..... </span>
-          </div>
-        </v-card-title>
-      </v-card>
-
-      <!-- Alize -->
-      <v-card>
-        <v-card-media
-          class="white--text"
-          height="200px"
-          >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <div class="headline-bg">
-                  <span class="headline">Alize De Matas</span>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">WiCS Executive Team of 2017</span><br>
-            <span>Ryerson University</span><br>
-            <span>Berif description of the team ..... </span>
-          </div>
-        </v-card-title>
-      </v-card>
-
-      <!-- Deborah Mepaiyeda -->
-      <v-card>
-        <v-card-media
-          class="white--text"
-          height="200px"
-          >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <div class="headline-bg">
-                  <span class="headline">Deborah Mepaiyeda</span>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">WiCS Executive Team of 2017</span><br>
-            <span>Ryerson University</span><br>
-            <span>Berif description of the team ..... </span>
-          </div>
-        </v-card-title>
-      </v-card>
-
-      <!-- Chloe Ierullo -->
-      <v-card class="chloe">
-        <v-card-media
-          class="white--text"
-          height="200px"
-        src="/static/images/events/event1.jpg"
-          >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <div class="headline-bg">
-                  <span class="headline">Chloe Ierullo</span>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">VP Events</span><br>
-            <span>Ryerson University</span><br>
-            <span>I am a third year Computer Science student. I am a member of the events and marketing associates team. I hope to one day bring my passions of Environmental studies and Computer Science together.</span>
-          </div>
-        </v-card-title>
-      </v-card>
-
-      <v-card>
-        <v-card-media
-          class="white--text"
-          height="200px"
-          >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <div class="headline-bg">
-                  <span class="headline">Louise Marquez</span>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">WiCS Executive Team of 2017</span><br>
-            <span>Ryerson University</span><br>
-            <span>Berif description of the team ..... </span>
-          </div>
-        </v-card-title>
-      </v-card>
-    </v-flex>
-  </v-layout>
+          <v-card>
+            <v-card-media
+              :src="card.src"
+              height="500px"
+            >
+              <v-container fill-height fluid>
+                <v-layout fill-height>
+                  <v-flex xs12 align-end flexbox>
+                    <span class="headline white--text" v-text="card.title"></span>
+                    <span class="subheader white--text" v-text="card.position"></span>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-card-media>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </div>
 </template>
 
+<script>
+  export default {
+    data: () => ({
+      cards: [
+        {
+          title: 'WiCS Team 2017 - 2018',
+          position: 'Women in Computer Science',
+          src: '/static/images/team/DSC_0163.jpg',
+          flex: 12
+        },
+        {
+          title: 'Deborah Mepaiyeda',
+          src: '/static/images/team/DSC_0010.jpg',
+          icon: 'fa-envelope',
+          email: 'dmepaiyeda@ryerson.ca',
+          position: 'Co-President',
+          description: 'I am a third year Computer Science student.I am passionate about Technology and how it is changing our world. Artificial Intelligence excites me and I hope to be make a positive difference in the World through it in the future.',
+          funFact: 'I love all things Korean - Korean Pop, Korean Dramas, Korean Culture. Presently, I am learning to speak and write in it. I aspire to be fluent in Korean and travel there in the future.',
+          flex: 6
+        },
+        {
+          title: 'Rojin Shahba',
+          src: '/static/images/team/DSC_0026.jpg',
+          icon: 'fa-envelope',
+          email: 'rshahba@ryerson.ca',
+          position: 'VP of Communications & Corporate Relations',
+          description: 'The most interesting thing about computer science to me is that we won' + 't graduate as developers, programmers, computer scientists, etc. We learn that our education journey doesn’t have a period, title nor a destination, but rather a satisfaction level. And that to me is freedom. Limitless!',
+          funFact: '',
+          flex: 6
+        },
+        {
+          title: 'Hema Chudasama',
+          src: '/static/images/team/DSC_0063.jpg',
+          icon: 'fa-envelope',
+          email: 'hema.chudasama@ryerson.ca',
+          position: 'VP Marketing',
+          description: 'I' + 'm Hema, a student who entered this program with zero experience in coding, and is now grateful for the useful programming skills that have been built along this journey. I' + ' m grateful for being apart of a group of women who help break stereotypes that have been established within the field of technology',
+          funFact: 'I love all things Korean - Korean Pop, Korean Dramas, Korean Culture. Presently, I am learning to speak and write in it. I aspire to be fluent in Korean and travel there in the future.',
+          flex: 6
+        },
+        {
+          title: 'Alize De Matas',
+          src: '/static/images/team/DSC_0163.jpg',
+          icon: 'fa-envelope',
+          email: 'adematas@ryerson.ca',
+          position: 'Marketing Associate',
+          description: 'Hi!!I am a second year Computer Science student. I have a passion for designing and creating any ideas I come up with. I hope to expand my creativity and imagination in the technical world of Computer Science.',
+          funFact: '',
+          flex: 6
+        }
+      ]
+    })
+  }
+</script>
+<!-- leave it out for now
+will add it on tuesday morning
 <style scoped>
-  .headline-bg{
+  .fluid:hover{
     background-color: black;
-    opacity: 0.5;
-  }
-  .headline{
-    opacity: 1;
-    line-height: 36px !important;
-  }
-
-  .layout{
-    margin-top: 48px;
+    opacity: 0.8;
   }
 </style>
+-->
