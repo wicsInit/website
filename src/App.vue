@@ -2,7 +2,7 @@
   <v-app light toolbar>
     <wics-nav-drawer></wics-nav-drawer>
     <wics-toolbar></wics-toolbar>
-    <main v-scroll="setScroll">
+    <main v-scroll.lazy="setScroll">
       <router-view></router-view>
     </main>
     <wics-footer></wics-footer>

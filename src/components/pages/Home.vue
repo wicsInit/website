@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <div data-v-325040ba="" class="landing card__media">
+    <div class="landing card__media">
       <!-- Home background -->
       <div
         class="card__media__background"
@@ -88,6 +88,9 @@
   }
   .landing {
     min-height: 100vh;
+  }
+  .flex {
+    margin: 0;
   }
   .center {
     margin: auto;
