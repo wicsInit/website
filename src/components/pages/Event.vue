@@ -1,12 +1,13 @@
 <template>
 
   <v-card>
-    <div data-v-325040ba="" class="landing card__media">
+    <div class="landing card__media">
       <!-- Home background -->
       <div
         class="card__media__background"
         :style="backgroundStyle"
       >
+      </div>
         <v-layout column>
           <v-flex xs12 sm6 offset-sm3>
             <!--<v-system-bar status class="indigo darken-2" dark>-->
@@ -285,7 +286,6 @@
         test: true,
         picker: null,
         backgroundSrc: '/static/images/slc-large-min-bright.jpg',
-
         card0: [
           { title: 'Pre-fab homes', src: 'https://scontent.fyyz1-1.fna.fbcdn.net/v/t1.0-9/21314808_1105195769611900_4846533824274533926_n.jpg?oh=4153d46938cf9c76a33a346ecd4b2add&oe=5A4F3CD2', flex: 6, blex: 12 }
         ],
@@ -360,14 +360,10 @@
       backgroundStyle () {
         return {
           'background-image': 'url("' + this.backgroundSrc + '")',
-          '-webkit-background-size': 'cover',
-          '-moz-background-size': 'cover',
-          '-o-background-size': 'cover',
-          'background-size': 'cover'
+          'background-size': 'cover',
+          'background-position': 'center unset',
+          'background-repeat': 'no-repeat no-repeat'
         }
-      },
-      action: function () {
-        this.dialog = true
       }
     },
     components: {
@@ -395,6 +391,9 @@
   }
   .landing {
     min-height: 100vh;
+  }
+  .flex {
+    margin: 0;
   }
   .center {
     margin: auto;
