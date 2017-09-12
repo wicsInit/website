@@ -39,11 +39,6 @@
   import componentConfig from '../../data/componentConfig'
 
   export default {
-    // removes main top padding so toolbar will cover background
-    mounted () {
-      var elements = document.getElementsByTagName('main')
-      elements[0].style['padding-top'] = '0px'
-    },
     data () {
       return {
         picker: null,

@@ -279,6 +279,7 @@
   export default {
     data () {
       return {
+        placeholder: '',
         dialog0: false,
         dialog1: false,
         dialog2: false,

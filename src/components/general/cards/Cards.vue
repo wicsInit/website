@@ -16,7 +16,7 @@
           <v-spacer></v-spacer>
           <!-- Card actions buttons -->
           <v-btn slot="actions" icon v-for="action in card.actions" :key="action.icon" :href="action.href">
-            <v-icon>{{ action.icon }}</v-icon>
+            <v-icon medium>{{ action.icon }}</v-icon>
           </v-btn>
         </v-card-actions>
       </wics-card>

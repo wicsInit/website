@@ -3,7 +3,7 @@
     <wics-loading v-if="loading"></wics-loading>
     <wics-nav-drawer></wics-nav-drawer>
     <wics-toolbar></wics-toolbar>
-    <main v-scroll.lazy="setScroll">
+    <main v-scroll.lazy="setScroll" style="padding-top: 0px;">
       <router-view></router-view>
     </main>
     <wics-footer></wics-footer>
