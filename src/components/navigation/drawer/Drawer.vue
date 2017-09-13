@@ -1,7 +1,7 @@
 <template>
   <v-navigation-drawer
-    temporary
-    :mini-variant="drawer.miniVariant"
+    v-bind="drawerType"
+    :mini-variant="drawer.mini"
     :clipped="drawer.clipped"
     v-model="drawer.model"
   >
@@ -9,7 +9,7 @@
     <v-toolbar flat class="transparent">
       <v-list class="pa-0" dense>
         <!-- WiCS logo drawer item -->
-        <v-list-tile avatar @click.stop="drawer.miniVariant = !drawer.miniVariant">
+        <v-list-tile avatar @click.stop="toggleMiniDrawer">
           <v-list-tile-avatar>
             <img src="/static/images/wics-logo.png"/>
           </v-list-tile-avatar>
@@ -41,13 +41,22 @@
     computed: {
       ...mapGetters([
         'drawer'
-      ])
+      ]),
+      drawerType () {
+        return [{[this.drawer.type]: true}]
+      }
+    },
+    methods: {
+      toggleMiniDrawer () {
+        if (this.drawer) {
+          this.drawer.mini = !this.drawer.mini
+        } else {
+          alert('Drawer data not found! Try reloading the page.')
+        }
+      }
     },
     components: {
       [componentConfig.list]: List
     }
   }
 </script>
-
-<style scoped>
-</style>

@@ -1,13 +1,13 @@
 <template>
   <v-toolbar
     fixed
-    :style="scroll < 50 ? 'background-color: rgba(20, 20, 20, 0.5)' || 'white': ''"
+    :style="[toolbarBackgroundColor]"
   >
     <v-toolbar-side-icon
-      @click.stop="drawer.model = !drawer.model"
       light
-      v-if="drawer.type !== 'permanent'"
-      v-bind="toolbarSideIcon"
+      @click.stop="toggleNavDrawer"
+      v-if="showToolbarSideIcon"
+      v-bind="toolbarSideIconColor"
     ></v-toolbar-side-icon>
     <v-spacer></v-spacer>
   </v-toolbar>
@@ -18,31 +18,32 @@
   export default {
     data () {
       return {
-        threshold: 80
+        threshold: 100
       }
     },
     computed: {
       ...mapGetters([
         'drawer',
-        'scroll',
-        'page'
+        'scroll'
       ]),
       toolbarBackgroundColor () {
-        console.log(this.scroll)
         return this.scroll < this.threshold ? {'background-color': 'rgba(20, 20, 20, 0.5)', color: 'white'} : {}
       },
-      toolbarSideIcon () {
-        if (this.page.toolbarBackgroundColor) {
-          return this.scroll < this.threshold ? [{dark: true}] : [{dark: false}]
-        } else {
-          console.log('no toolbar color')
-          return {dark: true}
-        }
+      toolbarSideIconColor () {
+        return this.scroll < this.threshold ? [{dark: true}] : [{dark: false}]
+      },
+      showToolbarSideIcon () {
+        return this.drawer.type !== 'permanent'
       }
     },
-    created () {
-      if (!this.page) {
-        this.page = {}
+    methods: {
+      toggleNavDrawer () {
+        if (this.drawer) {
+          this.drawer.model = !this.drawer.model
+        } else {
+          // error drawer prop was not provided
+          alert('Application error drawer data not provided! Try reloading the page.')
+        }
       }
     }
   }

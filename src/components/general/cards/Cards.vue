@@ -58,9 +58,3 @@
     }
   }
 </script>
-
-<style scoped>
-  ul.list--group:after {
-    background-color: white;
-  }
-</style>

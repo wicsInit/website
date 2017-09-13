@@ -33,10 +33,8 @@ export const store = new Vuex.Store({
         }
       ],
       // controls if drawer is mini
-      miniVariant: false,
-      // controls side of drawer
-      right: true,
-      rightDrawer: false
+      mini: false,
+      type: 'persistent'
     },
     // app footer data model
     footer: {
