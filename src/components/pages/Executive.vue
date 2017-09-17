@@ -71,7 +71,7 @@
         },
         {
           title: 'Alize De Matas',
-          src: '/static/images/team/DSC_0163.jpg',
+          src: '/static/images/team/DSC_0652.jpg',
           icon: 'fa-envelope',
           email: 'adematas@ryerson.ca',
           position: 'Marketing Associate',
@@ -96,6 +96,26 @@
           email: 'paurali.rahevar@ryerson.ca',
           position: 'VP Outreach',
           description: "I am a fourth year Computer Science student and I live by the quote 'Time never comes and goes, we come and we go'. I aim to pursue a career in Artificial and Business Intelligence to make my time count!",
+          funFact: 'I love eating and experiencing food from around the world. I also love to hike, run and travel.',
+          flex: 'xs12 sm6 md4'
+        },
+        {
+          title: 'Bhoomi Patel',
+          src: '/static/images/team/DSC_0643.jpg',
+          icon: 'fa-envelope',
+          email: 'b10patel@ryerson.ca',
+          position: 'VP Operations and Events',
+          description: "I am a fourth year Computer Science student and I live by the quote 'Time never comes and goes, we come and we go'. I aim to pursue a career in Artificial and Business Intelligence to make my time count!",
+          funFact: 'I love eating and experiencing food from around the world. I also love to hike, run and travel.',
+          flex: 'xs12 sm6 md4'
+        },
+        {
+          title: 'Chloe Lerullo',
+          src: '/static/images/team/DSC_0620.jpg',
+          icon: 'fa-envelope',
+          email: 'cierullo@ryerson.ca',
+          position: 'Events and Marketing Associate Team',
+          description: 'I am a third year Computer Science student. I am a member of the events and marketing associates team. I hope to one day bring my passions of Environmental studies and Computer Science together.',
           funFact: 'I love eating and experiencing food from around the world. I also love to hike, run and travel.',
           flex: 'xs12 sm6 md4'
         }
