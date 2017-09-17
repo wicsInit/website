@@ -48,7 +48,7 @@ export const store = new Vuex.Store({
     currentEvents: {
       type: 'info',
       alert: 'hi',
-      model: true
+      model: false
     }
   },
   mutations: {
