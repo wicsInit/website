@@ -1,5 +1,4 @@
 <template>
-
   <v-card>
     <div class="landing card__media">
       <!-- Home background -->
@@ -16,7 +15,7 @@
             <v-flex xs12 class="mb-3">
               <img
                 slot="media"
-                src="/static/images/team/DSC_0163-small.JPG"
+                src="/static/images/team/DSC_0163-small.jpg"
               >
             </v-flex>
             <!-- Home carousel -->
@@ -40,11 +39,6 @@
   import componentConfig from '../../data/componentConfig'
 
   export default {
-    // removes main top padding so toolbar will cover background
-    mounted () {
-      var elements = document.getElementsByTagName('main')
-      elements[0].style['padding-top'] = '0px'
-    },
     data () {
       return {
         picker: null,
@@ -59,7 +53,7 @@
         return {
           'background-image': 'url("' + this.backgroundSrc + '")',
           'background-size': 'cover',
-          'background-position': 'center unset',
+          'background-position': 'center center',
           'background-repeat': 'no-repeat no-repeat'
         }
       }

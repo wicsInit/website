@@ -33,10 +33,8 @@ export const store = new Vuex.Store({
         }
       ],
       // controls if drawer is mini
-      miniVariant: false,
-      // controls side of drawer
-      right: true,
-      rightDrawer: false
+      mini: false,
+      type: 'persistent'
     },
     // app footer data model
     footer: {
@@ -46,7 +44,12 @@ export const store = new Vuex.Store({
     page: {},
     // stores the scroll distance of the user in the app
     scroll: null,
-    loading: true
+    loading: true,
+    currentEvents: {
+      type: 'info',
+      alert: 'hi',
+      model: true
+    }
   },
   mutations: {
     // Sets the page data
@@ -98,6 +101,9 @@ export const store = new Vuex.Store({
     },
     loading: state => {
       return state.loading
+    },
+    currentEvents: state => {
+      return state.currentEvents
     }
   }
 })

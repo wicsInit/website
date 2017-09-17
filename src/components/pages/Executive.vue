@@ -3,8 +3,8 @@
     <v-container fluid grid-list-md class="grey lighten-4">
       <v-layout row wrap>
         <v-flex
+          v-for="card in page.cards"
           v-bind="{ [`xs${card.flex}`]: true }"
-          v-for="card in cards"
           :key="card.title"
           >
 
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
     data: () => ({
       cards: [

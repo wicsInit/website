@@ -39,7 +39,7 @@ const Contact = resolve => {
 const Events = resolve => {
   require.ensure(['../components/pages/Event.vue'], () => {
     resolve(require('../components/pages/Event.vue'))
-  }, 'contact')
+  }, 'events')
 }
 
 const Executive = resolve => {
