@@ -7,7 +7,7 @@ export default {
       title: 'WiCS Team 2017 - 2018',
       position: 'Women in Computer Science',
       src: '/static/images/team/DSC_0163.jpg',
-      flex: 12
+      flex: 'xs12 sm6 md4'
     },
     {
       title: 'Deborah Mepaiyeda',
