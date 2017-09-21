@@ -11,5 +11,6 @@ export default {
   toolbar: 'wics-toolbar',
   footer: 'wics-footer',
   carousel: 'wics-carousel',
-  loading: 'wics-loading'
+  loading: 'wics-loading',
+  dateCountdown: 'wics-date-countdown'
 }

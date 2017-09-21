@@ -11,6 +11,7 @@
       <div class="card__media__content" style="padding-top: 28px;">
         <v-container class="mt-5" style="padding: 4px;">
           <v-layout row wrap style="margin: 0 auto; max-width: 1000px;">
+            <wics-date-countdown></wics-date-countdown>
             <!-- App banner -->
             <v-flex xs12 class="mb-3">
               <img
@@ -35,6 +36,7 @@
   import Card from '../general/cards/Card.vue'
   import Cards from '../general/cards/Cards.vue'
   import Carousel from '../general/presentation/Carousel.vue'
+  import DateCountdown from '../progress/DateCountdown.vue'
   import { mapGetters } from 'vuex'
   import componentConfig from '../../data/componentConfig'
 
@@ -61,7 +63,8 @@
     components: {
       [componentConfig.cards]: Cards,
       [componentConfig.card]: Card,
-      [componentConfig.carousel]: Carousel
+      [componentConfig.carousel]: Carousel,
+      [componentConfig.dateCountdown]: DateCountdown
     }
   }
 </script>
