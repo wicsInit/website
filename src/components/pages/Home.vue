@@ -82,23 +82,23 @@
     top: -20px;
     overflow: visible;
     left: 8px;
-    background-color: rgba(20, 20, 20, 0.5);
-  }
-  .card__media {
-    overflow: visible;
-  }
-  .landing {
-    min-height: 100vh;
-  }
-  .flex {
-    margin: 0;
-  }
-  .center {
-    margin: auto;
-  }
-  div.carousel-container {
-    position: relative;
-    min-height: 250px;
-  }
-  div.landing.card__media > div.card__media__background { margin: auto; }
+background-color: rgba(20, 20, 20, 0.5);
+}
+.card__media {
+overflow: visible;
+}
+.landing {
+min-height: 100vh;
+}
+.flex {
+margin: 0;
+}
+.center {
+margin: auto;
+}
+div.carousel-container {
+position: relative;
+min-height: 250px;
+}
+div.landing.card__media > div.card__media__background { margin: auto; }
 </style>
