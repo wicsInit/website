@@ -178,27 +178,7 @@ export default {
                   title: 'Bhoomi Patel',
                   p: 'Vice-President Operations and Events'
                 },
-                src: '/static/images/wics-logo.png',
-                model: false,
-                hoverOver () {
-                  this.model = true
-                },
-                hoverOut () {
-                  this.model = false
-                }
-              }
-            }
-          },
-          {
-            tag: componentConfig.card,
-            data: {
-              flex: 'xs12 sm6 md4 lg3',
-              media: {
-                content: {
-                  title: 'Santhoshi Akshaya Shankar',
-                  p: 'Social Media Director'
-                },
-                src: '/static/images/team/santhu.jpg',
+                src: '/static/images/team/DSC_0643.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -244,8 +224,9 @@ export default {
               {
                 active: false,
                 expand: true,
-                title: 'Meet and Greet',
-                time: 'Mid September',
+                title: 'Meet N Greet',
+                time: 'October 4 6:00pm - 9:00pm',
+                location: 'SDZ',
                 color: '#3c688b',
                 description: 'Meet and Greet is an opportunity to meet and get to know the WiCS team, and our ' +
                 'plans for the school year. Also a chance to network and get to know their fellow Computer Science students.'
@@ -255,6 +236,7 @@ export default {
                 expand: true,
                 title: 'Cookie and Cram Night',
                 time: 'Late September',
+                location: 'TBA',
                 color: '#3c688b',
                 description: 'Cookies and Cram Night is an event that gives students the opportunity to connect with ' +
                 'one another while preparing for exams.  There will be students of different years which gives all ' +
@@ -267,6 +249,7 @@ export default {
                 expand: true,
                 title: 'Technical Mock Interview',
                 time: 'Last week of October to First week of November',
+                location: 'TBA',
                 color: '#3c688b',
                 description: 'In the Technology field, having strong technical skills is as essential as being able ' +
                 'to apply them in the workplace. Technical interviews allow students to apply their knowledge and show ' +

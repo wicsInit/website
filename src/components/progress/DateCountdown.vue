@@ -2,7 +2,9 @@
   <v-container style="margin: 0; padding: 5px;">
     <v-layout style="margin: auto; padding: auto;">
       <v-card style="margin: auto; width: 100%; padding: 10px;">
+        <h3>Meet N Greet in</h3>
         <p style="padding: 10px; margin: 0; display: inline; text-align: center;" v-for="(attr, i, z) in countdown">{{ attr }} {{ i }}</p>
+        <p class="location">Location: SDZ</p>
       </v-card>
     </v-layout>
   </v-container>
@@ -12,7 +14,7 @@
   export default {
     data () {
       return {
-        countdownDate: new Date('Jan 5, 2018 15:37:25').getTime(),
+        countdownDate: new Date('Oct 4, 2017 06:00:00').getTime(),
         countdown: {
         }
       }
@@ -42,8 +44,26 @@
 
 <style scoped>
   p {
-    text-align: center;
+    text-align: center !important;
     font-size: 24px;
+    background-color: #424242;
+    color: white;
+    margin: 1% !important;
+    border: 2px solid darkgray;
+    border-radius: 8px !important;
+  }
+  .application--light .card {
+    padding: 1%;
+    background-color: transparent;
+    border: 0;
+    text-align: center !important;
+  }
+  .location{
+    background-color: transparent;
+    color: #616161;
+    border: 0;
+    margin: 1% !important;
+
   }
 </style>
 

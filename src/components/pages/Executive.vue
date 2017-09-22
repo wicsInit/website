@@ -37,6 +37,11 @@
     }
   }
 </script>
+<style>
+  div.card__media__background[data-v-2a9b787a]{
+    opacity: 0.3;
+  }
+</style>
 <!-- leave it out for now
 will add it on tuesday morning
 <style scoped>

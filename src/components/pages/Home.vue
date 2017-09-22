@@ -71,6 +71,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  div.card__media__background[data-v-2a9b787a]{
+    opacity: 0.3;
+  }
   .wics-logo-container {
     position: absolute;
     display: block;
