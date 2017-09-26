@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row wrap>
       <v-flex xs12 md7>
-        <img src="/static/images/wics-logo.png" alt="wics logo" class="wics-logo">
+        <img src="/static/images/logo-black.png" alt="wics logo" class="wics-logo">
         <h3>Error page not found!</h3>
       </v-flex>
       <v-flex xs12 md7>

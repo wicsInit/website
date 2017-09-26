@@ -40,13 +40,13 @@
             src: '/static/images/events/event1.jpg'
           },
           {
-            src: '/static/images/events/img2.jpg'
+            src: '/static/images/events/wicsOttawa.jpg'
           },
           {
-            src: '/static/images/events/img4.jpg'
+            src: '/static/images/events/wicsStudySession.jpg'
           },
           {
-            src: '/static/images/events/img1.jpg'
+            src: '/static/images/events/wicsMeetup.jpg'
           }
         ]
       }

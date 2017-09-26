@@ -6,12 +6,12 @@ export default {
     {
       title: 'WiCS Team 2017 - 2018',
       position: 'Women in Computer Science',
-      src: '/static/images/team/DSC_0163.jpg',
+      src: '/static/images/team/banner.jpg',
       flex: 12
     },
     {
       title: 'Deborah Mepaiyeda',
-      src: '/static/images/team/DSC_0010.jpg',
+      src: '/static/images/team/deb.jpg',
       icon: 'fa-envelope',
       email: 'dmepaiyeda@ryerson.ca',
       position: 'Co-President',
@@ -21,7 +21,7 @@ export default {
     },
     {
       title: 'Rojin Shahba',
-      src: '/static/images/team/DSC_0026.jpg',
+      src: '/static/images/team/Rojin.jpg',
       icon: 'fa-envelope',
       email: 'rshahba@ryerson.ca',
       position: 'VP of Communications & Corporate Relations',
@@ -31,7 +31,7 @@ export default {
     },
     {
       title: 'Hema Chudasama',
-      src: '/static/images/team/DSC_0063.jpg',
+      src: '/static/images/team/Hema.jpg',
       icon: 'fa-envelope',
       email: 'hema.chudasama@ryerson.ca',
       position: 'VP Marketing',
@@ -51,7 +51,7 @@ export default {
     },
     {
       title: 'Lisa Wong',
-      src: '/static/images/team/DSC_0101.jpg',
+      src: '/static/images/team/Lisa.jpg',
       icon: 'fa-envelope',
       email: 'lisa.c.wong@ryerson.ca',
       position: 'VP Academics',
@@ -61,7 +61,7 @@ export default {
     },
     {
       title: 'Paurali Rahevar',
-      src: '/static/images/team/DSC_0042.jpg',
+      src: '/static/images/team/Paurali.jpg',
       icon: 'fa-envelope',
       email: 'paurali.rahevar@ryerson.ca',
       position: 'VP Outreach',

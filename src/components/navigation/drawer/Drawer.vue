@@ -11,7 +11,7 @@
         <!-- WiCS logo drawer item -->
         <v-list-tile avatar @click.stop="toggleMiniDrawer">
           <v-list-tile-avatar>
-            <img src="/static/images/wics-logo.png"/>
+            <img src="/static/images/logo-black.png"/>
           </v-list-tile-avatar>
           <!-- WiCS drawer tile title -->
           <v-list-tile-content>

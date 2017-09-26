@@ -57,7 +57,7 @@ export default {
                   title: 'Prabhleen Kamboj',
                   p: 'Co-President'
                 },
-                src: '/static/images/team/DSC_0090.jpg',
+                src: '/static/images/team/Prabhleen.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -78,7 +78,7 @@ export default {
                   title: 'Deborah Mepaiyeda',
                   p: 'Co-President'
                 },
-                src: '/static/images/team/DSC_0010.jpg',
+                src: '/static/images/team/deb.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -98,7 +98,7 @@ export default {
                   title: 'Rojin Shahba',
                   p: 'VP of Communications & Corporate Relations'
                 },
-                src: '/static/images/team/DSC_0026.jpg',
+                src: '/static/images/team/Rojin.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -118,7 +118,7 @@ export default {
                   title: 'Hema Chudasama',
                   p: 'VP Marketing'
                 },
-                src: '/static/images/team/DSC_0063.jpg',
+                src: '/static/images/team/Hema.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -138,7 +138,7 @@ export default {
                   title: 'Lisa Wong',
                   p: 'VP Academics'
                 },
-                src: '/static/images/team/DSC_0101.jpg',
+                src: '/static/images/team/Lisa.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -158,7 +158,7 @@ export default {
                   title: 'Paurali Rahevar',
                   p: 'Vice-President Operations and Events'
                 },
-                src: '/static/images/team/DSC_0042.jpg',
+                src: '/static/images/team/Paurali.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
