@@ -96,6 +96,8 @@
   }
   .seperator {
     position: absolute;
+    top: 10px;
+    right: -10px;
   }
 
   @media only screen and (max-width: 950px){
