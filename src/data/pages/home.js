@@ -57,7 +57,7 @@ export default {
                   title: 'Prabhleen Kamboj',
                   p: 'Co-President'
                 },
-                src: '/static/images/team/Prabhleen.jpg',
+                src: '/static/images/team/2017/Prabhleen.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -78,7 +78,7 @@ export default {
                   title: 'Deborah Mepaiyeda',
                   p: 'Co-President'
                 },
-                src: '/static/images/team/deb.jpg',
+                src: '/static/images/team/2017/deborah.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -98,7 +98,7 @@ export default {
                   title: 'Rojin Shahba',
                   p: 'VP of Communications & Corporate Relations'
                 },
-                src: '/static/images/team/Rojin.jpg',
+                src: '/static/images/team/2017/rojin.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -118,7 +118,7 @@ export default {
                   title: 'Hema Chudasama',
                   p: 'VP Marketing'
                 },
-                src: '/static/images/team/Hema.jpg',
+                src: '/static/images/team/2017/hema.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -138,7 +138,7 @@ export default {
                   title: 'Lisa Wong',
                   p: 'VP Academics'
                 },
-                src: '/static/images/team/Lisa.jpg',
+                src: '/static/images/team/2017/lisa.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -158,7 +158,7 @@ export default {
                   title: 'Paurali Rahevar',
                   p: 'Vice-President Operations and Events'
                 },
-                src: '/static/images/team/Paurali.jpg',
+                src: '/static/images/team/2017/paurali.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true
@@ -178,7 +178,7 @@ export default {
                   title: 'Bhoomi Patel',
                   p: 'Vice-President Operations and Events'
                 },
-                src: '/static/images/team/DSC_0643.jpg',
+                src: '/static/images/team/2017/bhoomi.jpg',
                 model: false,
                 hoverOver () {
                   this.model = true

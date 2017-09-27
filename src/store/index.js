@@ -30,6 +30,11 @@ export const store = new Vuex.Store({
           icon: 'perm_contact_calendar',
           title: 'Contact',
           to: '/contact'
+        },
+        {
+          icon: 'fa fa-shopping-cart',
+          title: 'Shop',
+          to: '/shop'
         }
       ],
       // controls if drawer is mini

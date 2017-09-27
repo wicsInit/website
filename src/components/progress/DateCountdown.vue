@@ -17,7 +17,7 @@
             </h1>
             <p class="label" style="padding: 3px; margin: auto; text-align: center; font-size: 20px;">{{ attr }}</p>
           </div>
-          <h1 style="display: inline-block"> : </h1>
+          <h1 style="display: inline-block"> </h1>
           <h4 class="location">Location: Science Discovery Zone</h4>
       </v-card>
     </v-layout>
