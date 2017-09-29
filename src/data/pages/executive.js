@@ -6,12 +6,22 @@ export default {
     {
       title: 'WiCS Team 2017 - 2018',
       position: 'Women in Computer Science',
-      src: '/static/images/team/banner.jpg',
+      src: '/static/images/team/2017/team.jpg',
       flex: 12
     },
     {
       title: 'Deborah Mepaiyeda',
-      src: '/static/images/team/deb.jpg',
+      src: '/static/images/team/2017/deborah.jpg',
+      icon: 'fa-envelope',
+      email: 'dmepaiyeda@ryerson.ca',
+      position: 'Co-President',
+      description: 'I am a third year Computer Science student.I am passionate about Technology and how it is changing our world. Artificial Intelligence excites me and I hope to be make a positive difference in the World through it in the future.',
+      funFact: 'I love all things Korean - Korean Pop, Korean Dramas, Korean Culture. Presently, I am learning to speak and write in it. I aspire to be fluent in Korean and travel there in the future.',
+      flex: 'xs12 sm6 md4'
+    },
+    {
+      title: 'Prabhleen Kamboj',
+      src: '/static/images/team/2017/Prabhleen.jpg',
       icon: 'fa-envelope',
       email: 'dmepaiyeda@ryerson.ca',
       position: 'Co-President',
@@ -21,7 +31,7 @@ export default {
     },
     {
       title: 'Rojin Shahba',
-      src: '/static/images/team/Rojin.jpg',
+      src: '/static/images/team/2017/rojin.jpg',
       icon: 'fa-envelope',
       email: 'rshahba@ryerson.ca',
       position: 'VP of Communications & Corporate Relations',
@@ -31,7 +41,7 @@ export default {
     },
     {
       title: 'Hema Chudasama',
-      src: '/static/images/team/Hema.jpg',
+      src: '/static/images/team/2017/hema.jpg',
       icon: 'fa-envelope',
       email: 'hema.chudasama@ryerson.ca',
       position: 'VP Marketing',
@@ -41,7 +51,7 @@ export default {
     },
     {
       title: 'Alize De Matas',
-      src: '/static/images/team/DSC_0652.jpg',
+      src: '/static/images/team/2017/dsc_0651.jpg',
       icon: 'fa-envelope',
       email: 'adematas@ryerson.ca',
       position: 'Marketing Associate',
@@ -51,7 +61,7 @@ export default {
     },
     {
       title: 'Lisa Wong',
-      src: '/static/images/team/Lisa.jpg',
+      src: '/static/images/team/2017/lisa.jpg',
       icon: 'fa-envelope',
       email: 'lisa.c.wong@ryerson.ca',
       position: 'VP Academics',
@@ -61,7 +71,7 @@ export default {
     },
     {
       title: 'Paurali Rahevar',
-      src: '/static/images/team/Paurali.jpg',
+      src: '/static/images/team/2017/paurali.jpg',
       icon: 'fa-envelope',
       email: 'paurali.rahevar@ryerson.ca',
       position: 'VP Outreach',
@@ -71,7 +81,7 @@ export default {
     },
     {
       title: 'Bhoomi Patel',
-      src: '/static/images/team/DSC_0643.jpg',
+      src: '/static/images/team/2017/bhoomi.jpg',
       icon: 'fa-envelope',
       email: 'b10patel@ryerson.ca',
       position: 'VP Operations and Events',
@@ -81,7 +91,7 @@ export default {
     },
     {
       title: 'Chloe Lerullo',
-      src: '/static/images/team/DSC_0620.jpg',
+      src: '/static/images/team/2017/chloe.jpg',
       icon: 'fa-envelope',
       email: 'cierullo@ryerson.ca',
       position: 'Events and Marketing Associate Team',
