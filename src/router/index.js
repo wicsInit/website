@@ -48,12 +48,6 @@ const Executive = resolve => {
   }, 'executive')
 }
 
-const Shop = resolve => {
-  require.ensure(['../components/pages/Shop.vue'], () => {
-    resolve(require('../components/pages/Shop.vue'))
-  }, 'shop')
-}
-
 const PageNotFound = resolve => {
   require.ensure(['../components/pages/pageNotFound.vue'], () => {
     resolve(require('../components/pages/pageNotFound.vue'))
@@ -103,11 +97,6 @@ export default new Router({
       path: '/exec',
       name: 'executive',
       component: Executive
-    },
-    {
-      path: '/shop',
-      name: 'shop',
-      component: Shop
     },
     {
       path: '*',
