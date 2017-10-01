@@ -225,7 +225,7 @@ export default {
                 active: false,
                 expand: true,
                 title: 'Meet N Greet',
-                time: 'October 4 6:00pm - 9:00pm',
+                time: 'October 2 6:00pm - 9:00pm',
                 location: 'SDZ',
                 color: '#3c688b',
                 description: 'Meet and Greet is an opportunity to meet and get to know the WiCS team, and our ' +

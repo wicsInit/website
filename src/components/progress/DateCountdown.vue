@@ -28,7 +28,7 @@
   export default {
     data () {
       return {
-        countdownDate: new Date('Oct 4, 2017 06:00:00').getTime(),
+        countdownDate: new Date('Oct 2, 2017 06:00:00').getTime(),
         countdown: {
         }
       }
