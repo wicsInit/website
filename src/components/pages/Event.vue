@@ -10,49 +10,11 @@
       </div>
         <v-layout column>
           <v-flex xs12 sm6 offset-sm3>
-            <!--<v-system-bar status class="indigo darken-2" dark>-->
-            <!--<v-spacer></v-spacer>-->
-            <!--<v-icon>network_wifi</v-icon>-->
-            <!--<v-icon>signal_cellular_null</v-icon>-->
-            <!--<v-icon>battery_full</v-icon>-->
-            <!--<span>12:30</span>-->
-            <!--</v-system-bar>-->
-            <!--<v-toolbar class="indigo" dark>-->
-            <!--<v-toolbar-side-icon></v-toolbar-side-icon>-->
-            <!--<v-toolbar-title>Discover</v-toolbar-title>-->
-            <!--<v-spacer></v-spacer>-->
-            <!--<v-btn icon>-->
-            <!--<v-icon>search</v-icon>-->
-            <!--</v-btn>-->
-            <!--</v-toolbar>-->
             <v-container style="margin-top: 70px;" fluid grid-list-md>
+              <div class="back">
+                Past Events
+              </div>
               <v-layout row wrap>
-                <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card0" :key="card.title">
-                  <v-card>
-                    <v-card-media :src="card.src" @click.native.stop="dialog0=true" height="200px">
-                      <v-container fill-height fluid>
-                        <v-layout fill-height>
-                          <v-flex xs12 align-end flexbox>
-                            <v-dialog width="1000px" v-model="dialog0" lazy absolute>
-                              <v-card>
-                                <v-carousel @click.native.stop="dialog0=true">
-                                  <v-carousel-item v-for="(item1,i) in items0" v-bind:src="item1.src" @click.native.stop="dialog0=true" :key="i"></v-carousel-item>
-                                </v-carousel>
-                              </v-card>
-                            </v-dialog>
-                            <!--<span class="headline white--text" v-text="card.title"></span>-->
-                          </v-flex>
-                        </v-layout>
-                      </v-container>
-                    </v-card-media>
-                    <v-card-title>
-                      <div>
-                        <span>Club Fair Day</span><br>
-                        <span class="grey--text">Day of meet and greet to learn more about WICS</span><br>
-                      </div>
-                    </v-card-title>
-                  </v-card>
-                </v-flex>
                 <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card1" :key="card.title">
                   <v-card>
                     <v-card-media :src="card.src" @click.native.stop="dialog1=true" height="200px">
@@ -74,12 +36,73 @@
                     <v-card-title>
                       <div>
                         <span>WICS Picnic</span><br>
-                        <span class="grey--text">PMeeting up and getting to know the WICS team</span><br>
+                        <span>Date: <span class="grey--text">High Park</span></span><br>
+                        <span>Location: <span class="grey--text">August 19th</span></span><br>
+                        <span>Description: <span class="grey--text">Meeting up and getting to know the WICS team.</span></span><br>
                       </div>
                     </v-card-title>
                   </v-card>
                 </v-flex>
-                <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card2" :key="card.title">
+                <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card0" :key="card.title">
+                  <v-card>
+                    <v-card-media :src="card.src" @click.native.stop="dialog0=true" height="200px">
+                      <v-container fill-height fluid>
+                        <v-layout fill-height>
+                          <v-flex xs12 align-end flexbox>
+                            <v-dialog width="1000px" v-model="dialog0" lazy absolute>
+                              <v-card>
+                                <v-carousel @click.native.stop="dialog0=true">
+                                  <v-carousel-item v-for="(item1,i) in items0" v-bind:src="item1.src" @click.native.stop="dialog0=true" :key="i"></v-carousel-item>
+                                </v-carousel>
+                              </v-card>
+                            </v-dialog>
+                            <!--<span class="headline white--text" v-text="card.title"></span>-->
+                          </v-flex>
+                        </v-layout>
+                      </v-container>
+                    </v-card-media>
+                    <v-card-title>
+                      <div>
+                        <span>Club Fair Day</span><br>
+                        <span>Date: <span class="grey--text">Sept 8th</span></span><br>
+                        <span>Location: <span class="grey--text">Outside of Ker hall</span></span><br>
+                        <span>Description: <span class="grey--text">Join WICS by passing by our event!</span></span><br>
+                      </div>
+                    </v-card-title>
+                  </v-card>
+                </v-flex>
+                <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card5" :key="card.title">
+                  <div class="back">
+                    Upcoming Events
+                  </div>
+                  <v-card>
+                    <v-card-media :src="card.src" height="200px">
+                      <v-container fill-height fluid>
+                        <v-layout fill-height>
+                          <v-flex xs12 align-end flexbox>
+                            <!--<v-dialog width="1000px" v-model="dialog3" lazy absolute>-->
+                            <!--<v-card>-->
+                            <!--<v-carousel @click.native.stop="dialog3=true">-->
+                            <!--<v-carousel-item v-for="(item3,i) in items3" v-bind:src="item3.src" @click.native.stop="dialog3=true" :key="i"></v-carousel-item>-->
+                            <!--</v-carousel>-->
+                            <!--</v-card>-->
+                            <!--</v-dialog>-->
+                            <!--<span class="headline white--text" v-text="card.title"></span>-->
+                          </v-flex>
+                        </v-layout>
+                      </v-container>
+                    </v-card-media>
+                    <v-card-title>
+                      <div>
+                        <span>Meet And Greet</span><br>
+                        <span>Date: <span class="grey--text">October 2nd</span></span><br>
+                        <span>Location: <span class="grey--text">Science Discovery Zone at Ryerson University</span></span><br>
+                        <span>Description: <span class="grey--text">Get the opportunity to meet and interact with the WiCS team, and learn all about our plans for the school year. Come by for a chance to network and socialize with fellow Computer Science students, and also participate in a fun evening with games and food (Free pizza and snacks).</span></span><br>
+                      </div>
+                    </v-card-title>
+                  </v-card>
+                </v-flex>
+                <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card6" :key="card.title">
                   <v-card>
                     <v-card-media :src="card.src" @click.native.stop="dialog2=true" height="200px">
                       <v-container fill-height fluid>
@@ -100,7 +123,9 @@
                     <v-card-title>
                       <div>
                         <span>Cookies And Cram</span><br>
-                        <span class="grey--text">Midterms Can be stressful, let's be stressed together. Join WiCS in SLC514 on October 25th for a cookies and cram session. Enjoy some comfort food while cramming for those dreadful midterms.</span><br>
+                        <span>Date: <span class="grey--text">October 16th</span></span><br>
+                        <span>Location: <span class="grey--text">TBA</span></span><br>
+                        <span>Description: <span class="grey--text">Midterms Can be stressful, let's be stressed together. Join WiCS for a cookies and cram session. Enjoy some comfort food while cramming for those dreadful midterms.</span></span><br>
                       </div>
                     </v-card-title>
                   </v-card>
@@ -125,8 +150,38 @@
                     </v-card-media>
                     <v-card-title>
                       <div>
-                        <span>CAN-WICS Conference 2016</span><br>
-                        <span class="grey--text">Meet up at the CAN-WICS conference 2016</span><br>
+                        <span>CAN-WICS Conference 2017</span><br>
+                        <span>Date: <span class="grey--text">TBA</span></span><br>
+                        <span>Location: <span class="grey--text">TBA</span></span><br>
+                        <span>Description: <span class="grey--text">Meet up at the CAN-WICS conference 2017</span></span><br>
+                      </div>
+                    </v-card-title>
+                  </v-card>
+                </v-flex>
+                <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card4" :key="card.title">
+                  <v-card>
+                    <v-card-media :src="card.src" height="200px">
+                      <v-container fill-height fluid>
+                        <v-layout fill-height>
+                          <v-flex xs12 align-end flexbox>
+                            <!--<v-dialog width="1000px" v-model="dialog3" lazy absolute>-->
+                            <!--<v-card>-->
+                            <!--<v-carousel @click.native.stop="dialog3=true">-->
+                            <!--<v-carousel-item v-for="(item3,i) in items3" v-bind:src="item3.src" @click.native.stop="dialog3=true" :key="i"></v-carousel-item>-->
+                            <!--</v-carousel>-->
+                            <!--</v-card>-->
+                            <!--</v-dialog>-->
+                            <!--<span class="headline white--text" v-text="card.title"></span>-->
+                          </v-flex>
+                        </v-layout>
+                      </v-container>
+                    </v-card-media>
+                    <v-card-title>
+                      <div>
+                        <span>Women in STEM Panel</span><br>
+                        <span>Date: <span class="grey--text">January 24th</span></span><br>
+                        <span>Location: <span class="grey--text">TBA</span></span><br>
+                        <!--<span>Description: <span class="grey&#45;&#45;text"></span></span><br>-->
                       </div>
                     </v-card-title>
                   </v-card>
@@ -152,59 +207,9 @@
                     <v-card-title>
                       <div>
                         <span>Industry Night</span><br>
-                        <span class="grey--text"></span><br>
-                      </div>
-                    </v-card-title>
-                  </v-card>
-                </v-flex>
-                <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card4" :key="card.title">
-                  <v-card>
-                    <v-card-media :src="card.src" height="200px">
-                      <v-container fill-height fluid>
-                        <v-layout fill-height>
-                          <v-flex xs12 align-end flexbox>
-                            <!--<v-dialog width="1000px" v-model="dialog3" lazy absolute>-->
-                              <!--<v-card>-->
-                                <!--<v-carousel @click.native.stop="dialog3=true">-->
-                                  <!--<v-carousel-item v-for="(item3,i) in items3" v-bind:src="item3.src" @click.native.stop="dialog3=true" :key="i"></v-carousel-item>-->
-                                <!--</v-carousel>-->
-                              <!--</v-card>-->
-                            <!--</v-dialog>-->
-                            <!--<span class="headline white--text" v-text="card.title"></span>-->
-                          </v-flex>
-                        </v-layout>
-                      </v-container>
-                    </v-card-media>
-                    <v-card-title>
-                      <div>
-                        <span>Women in STEM Panel</span><br>
-                        <span class="grey--text"></span><br>
-                      </div>
-                    </v-card-title>
-                  </v-card>
-                </v-flex>
-                <v-flex style="padding: 7px;" v-bind="{ [`xs${card.lex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card4" :key="card.title">
-                  <v-card>
-                    <v-card-media :src="card.src" height="200px">
-                      <v-container fill-height fluid>
-                        <v-layout fill-height>
-                          <v-flex xs12 align-end flexbox>
-                            <!--<v-dialog width="1000px" v-model="dialog3" lazy absolute>-->
-                              <!--<v-card>-->
-                                <!--<v-carousel @click.native.stop="dialog3=true">-->
-                                  <!--<v-carousel-item v-for="(item3,i) in items3" v-bind:src="item3.src" @click.native.stop="dialog3=true" :key="i"></v-carousel-item>-->
-                                <!--</v-carousel>-->
-                              <!--</v-card>-->
-                            <!--</v-dialog>-->
-                            <!--<span class="headline white--text" v-text="card.title"></span>-->
-                          </v-flex>
-                        </v-layout>
-                      </v-container>
-                    </v-card-media>
-                    <v-card-title>
-                      <div>
-                        <span>Meet and Greet</span><br>
-                        <span class="grey--text"></span><br>
+                        <span>Date: <span class="grey--text">January 25th</span></span><br>
+                        <span>Location: <span class="grey--text">TBA</span></span><br>
+                        <!--<span>Description: <span class="grey&#45;&#45;text"></span></span><br>-->
                       </div>
                     </v-card-title>
                   </v-card>
@@ -230,7 +235,9 @@
                     <v-card-title>
                       <div>
                         <span>Let’s Talk Science</span><br>
-                        <span class="grey--text"></span><br>
+                        <span>Date: <span class="grey--text">TBA</span></span><br>
+                        <span>Location: <span class="grey--text">TBA</span></span><br>
+                        <!--<span>Description: <span class="grey&#45;&#45;text"></span></span><br>-->
                       </div>
                     </v-card-title>
                   </v-card>
@@ -256,7 +263,9 @@
                     <v-card-title>
                       <div>
                         <span>SciXChange</span><br>
-                        <span class="grey--text"></span><br>
+                        <span>Date: <span class="grey--text">TBA</span></span><br>
+                        <span>Location: <span class="grey--text">TBA</span></span><br>
+                        <!--<span>Description: <span class="grey&#45;&#45;text"></span></span><br>-->
                       </div>
                     </v-card-title>
                   </v-card>
@@ -300,7 +309,13 @@
           { title: 'Pre-fab homes', src: 'https://scontent.fyyz1-1.fna.fbcdn.net/v/t31.0-8/12646860_754879011310246_532438302748825512_o.jpg?oh=0747f19383216203a9240c0d69f1f451&oe=5A1B258E', flex: 6, blex: 12 }
         ],
         card4: [
-          { title: 'Pre-fab homes', src: 'https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg', flex: 6, blex: 12 }
+          { title: 'Pre-fab homes', src: 'static/images/events/coming-soon-2550190_1280.jpg', flex: 6, blex: 12 }
+        ],
+        card5: [
+          { title: 'Pre-fab homes', src: 'https://scontent.fyyz1-1.fna.fbcdn.net/v/t1.0-9/21752312_10214077990800717_621207139871473369_n.jpg?oh=846e53ed0a41cdb2ede7ca8086236ddf&oe=5A48BE3C' }
+        ],
+        card6: [
+          { title: 'Pre-fab homes', src: 'static/images/events/books-2164387_1920.jpg' }
         ],
         items0: [
           {
@@ -403,5 +418,24 @@
     position: relative;
     min-height: 250px;
   }
-  div.landing.card__media > div.card__media__background { margin: auto; }
+  div.landing.card__media > div.card__media__background { margin: auto; opacity: 0.3; }
+
+  .title{
+    font-size: 50px;
+    color: white;
+  }
+
+  .back{
+    background-color: #00BFFF;
+    background: #3e6989;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    opacity: 0.5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 </style>
