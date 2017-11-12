@@ -36,6 +36,12 @@ const Contact = resolve => {
   }, 'contact')
 }
 
+const Partnership = resolve => {
+  require.ensure(['../components/pages/Partnerships.vue'], () => {
+    resolve(require('../components/pages/Partnerships.vue'))
+  }, 'partnerships')
+}
+
 const Events = resolve => {
   require.ensure(['../components/pages/Event.vue'], () => {
     resolve(require('../components/pages/Event.vue'))
@@ -87,6 +93,11 @@ export default new Router({
       path: '/events',
       name: 'events',
       component: Events
+    },
+    {
+      path: '/partnerships',
+      name: 'partnerships',
+      component: Partnership
     },
     {
       path: '/contact',

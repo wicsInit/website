@@ -30,6 +30,11 @@ export const store = new Vuex.Store({
           icon: 'perm_contact_calendar',
           title: 'Contact',
           to: '/contact'
+        },
+        {
+          icon: 'group_work',
+          title: 'Partnerships',
+          to: '/partnerships'
         }
       ],
       /*

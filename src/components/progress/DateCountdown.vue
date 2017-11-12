@@ -5,7 +5,7 @@
       <v-card
         style="margin: auto; width: 100%; padding: 10px;"
       >
-          <h3 class="txt" style="width: 75%; text-align: center; margin: auto">Meet N Greet in</h3>
+          <h3 class="txt" style="width: 75%; text-align: center; margin: auto">Movie Night</h3>
           <div
             class="xs3"
             style="display: inline-block; text-align: center;"
@@ -18,7 +18,7 @@
             <p class="label" style="padding: 3px; margin: auto; text-align: center; font-size: 20px;">{{ attr }}</p>
           </div>
           <h1 style="display: inline-block"> </h1>
-          <h4 class="location">Location: Science Discovery Zone</h4>
+          <h4 class="location">Location: TBA</h4>
       </v-card>
     </v-layout>
   </v-container>
@@ -28,7 +28,7 @@
   export default {
     data () {
       return {
-        countdownDate: new Date('Oct 2, 2017 06:00:00').getTime(),
+        countdownDate: new Date('Dec 15, 2017 06:00:00').getTime(),
         countdown: {
         }
       }
