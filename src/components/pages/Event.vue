@@ -28,19 +28,19 @@
                 <v-flex xs12 sm6 offset-sm3>
                   <v-container fluid grid-list-md>
                     <v-layout row wrap>
-                      <v-flex style="padding: 7px;" v-bind="{ [`xs${card.blex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card6" :key="card.title">
+                      <v-flex style="padding: 7px;" v-bind="{ [`xs${card.blex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card7" :key="card.title">
                         <v-card>
                           <v-card-media :src="card.src" @click.native.stop="dialog2=true" height="200px">
                             <v-container fill-height fluid>
                               <v-layout fill-height>
                                 <v-flex xs12 align-end flexbox>
-                                  <v-dialog width="1000px" v-model="dialog2" lazy absolute>
-                                    <v-card>
-                                      <v-carousel @click.native.stop="dialog2=true">
-                                        <v-carousel-item v-for="(item2,i) in items2" v-bind:src="item2.src" @click.native.stop="dialog2=true" :key="i"></v-carousel-item>
-                                      </v-carousel>
-                                    </v-card>
-                                  </v-dialog>
+                                  <!--<v-dialog width="1000px" v-model="dialog2" lazy absolute>-->
+                                    <!--<v-card>-->
+                                      <!--<v-carousel @click.native.stop="dialog2=true">-->
+                                        <!--<v-carousel-item v-for="(item2,i) in items2" v-bind:src="item2.src" @click.native.stop="dialog2=true" :key="i"></v-carousel-item>-->
+                                      <!--</v-carousel>-->
+                                    <!--</v-card>-->
+                                  <!--</v-dialog>-->
                                   <!--<span class="headline white--text" v-text="card.title"></span>-->
                                 </v-flex>
                               </v-layout>
@@ -48,14 +48,42 @@
                           </v-card-media>
                           <v-card-title>
                             <div>
-                              <span>Cookies And Cram</span><br>
-                              <span>Date: <span class="grey--text">October 25th</span></span><br>
+                              <span>Holiday Party</span><br>
+                              <span>Date: <span class="grey--text">Decemeber 15th</span></span><br>
                               <span>Location: <span class="grey--text">TBA</span></span><br>
-                              <span>Description: <span class="grey--text">Midterms Can be stressful, let's be stressed together. Join WiCS for a cookies and cram session. Enjoy some comfort food while cramming for those dreadful midterms.</span></span><br>
+                              <!--<span>Description: <span class="grey&#45;&#45;text">Midterms Can be stressful, let's be stressed together. Join WiCS for a cookies and cram session. Enjoy some comfort food while cramming for those dreadful midterms.</span></span><br>-->
                             </div>
                           </v-card-title>
                         </v-card>
                       </v-flex>
+                      <!--<v-flex style="padding: 7px;" v-bind="{ [`xs${card.blex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card6" :key="card.title">-->
+                        <!--<v-card>-->
+                          <!--<v-card-media :src="card.src" @click.native.stop="dialog2=true" height="200px">-->
+                            <!--<v-container fill-height fluid>-->
+                              <!--<v-layout fill-height>-->
+                                <!--<v-flex xs12 align-end flexbox>-->
+                                  <!--<v-dialog width="1000px" v-model="dialog2" lazy absolute>-->
+                                    <!--<v-card>-->
+                                      <!--<v-carousel @click.native.stop="dialog2=true">-->
+                                        <!--<v-carousel-item v-for="(item2,i) in items2" v-bind:src="item2.src" @click.native.stop="dialog2=true" :key="i"></v-carousel-item>-->
+                                      <!--</v-carousel>-->
+                                    <!--</v-card>-->
+                                  <!--</v-dialog>-->
+                                  <!--&lt;!&ndash;<span class="headline white&#45;&#45;text" v-text="card.title"></span>&ndash;&gt;-->
+                                <!--</v-flex>-->
+                              <!--</v-layout>-->
+                            <!--</v-container>-->
+                          <!--</v-card-media>-->
+                          <!--<v-card-title>-->
+                            <!--<div>-->
+                              <!--<span>Cookies And Cram</span><br>-->
+                              <!--<span>Date: <span class="grey&#45;&#45;text">October 25th</span></span><br>-->
+                              <!--<span>Location: <span class="grey&#45;&#45;text">TBA</span></span><br>-->
+                              <!--<span>Description: <span class="grey&#45;&#45;text">Midterms Can be stressful, let's be stressed together. Join WiCS for a cookies and cram session. Enjoy some comfort food while cramming for those dreadful midterms.</span></span><br>-->
+                            <!--</div>-->
+                          <!--</v-card-title>-->
+                        <!--</v-card>-->
+                      <!--</v-flex>-->
                       <v-flex style="padding: 7px;" v-bind="{ [`xs${card.blex}`]: true, [`sm${card.flex}`]: true }" v-for="card in card3" :key="card.title">
                         <v-card>
                           <v-card-media :src="card.src" @click.native.stop="dialog3=true" height="200px">
@@ -345,6 +373,9 @@
         ],
         card6: [
           { title: 'Pre-fab homes', src: 'static/images/events/books-2164387_1920.jpg' }
+        ],
+        card7: [
+          { title: 'Pre-fab homes', src: 'static/images/events/winter.jpg' }
         ],
         items0: [
           {

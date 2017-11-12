@@ -5,7 +5,7 @@
       <v-card
         style="margin: auto; width: 100%; padding: 10px;"
       >
-          <h3 class="txt" style="width: 75%; text-align: center; margin: auto">Movie Night</h3>
+          <h3 class="txt" style="width: 75%; text-align: center; margin: auto">Holiday Party</h3>
           <div
             class="xs3"
             style="display: inline-block; text-align: center;"
