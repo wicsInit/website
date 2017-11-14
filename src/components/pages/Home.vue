@@ -16,7 +16,7 @@
             <v-flex xs12 class="mb-3">
               <img
                 slot="media"
-                src="/static/images/team/2017/banner-small.jpg"
+                src="/static/images/team/2017/team.jpg"
               >
             </v-flex>
             <!-- Home carousel -->
@@ -54,8 +54,9 @@
       backgroundStyle () {
         return {
           'background-image': 'url("' + this.backgroundSrc + '")',
-          'background-repeat': 'no-repeat no-repeat',
+          'background-repeat': 'no-repeat',
           'background-attachment:': 'fixed'
+
         }
       }
     },
@@ -70,12 +71,12 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-
+  /* background: #fff; */
   div.card__media__background[data-v-2a9b787a]{
     /*opacity: 0.3;*/
     width: 100%;
     height: 100%;
+    background-attachment: fixed;
   }
 
   .wics-logo-container {

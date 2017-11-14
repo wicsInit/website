@@ -11,8 +11,9 @@
     >
       <wics-list-tile :tile="tile" slot="item"></wics-list-tile>
       <!-- Drawer Sub items -->
-      <blockquote class="my-2">
+      <blockquote class="my-2" >
         <h6 class="black--text">{{ tile.time }}</h6>
+        <h6 class="black--text">{{ tile.location }}</h6>
         <p>{{ tile.description }}</p>
       </blockquote>
     </v-list-group>
@@ -49,5 +50,9 @@
 <style scoped>
   ul.list {
     width: 100%;
+    background-color: #dadada !important;
+  }
+  blockquote.my-2{
+    background-color: #dadada !important;
   }
 </style>

@@ -5,7 +5,7 @@
       <v-card
         style="margin: auto; width: 100%; padding: 10px;"
       >
-          <h3 class="txt" style="width: 75%; text-align: center; margin: auto">Holiday Party</h3>
+          <h3 class="txt" style="width: 75%; text-align: center; margin: auto; color:#25a519">Holiday Party</h3>
           <div
             class="xs3"
             style="display: inline-block; text-align: center;"
@@ -63,28 +63,28 @@
    /* background-color: #424242;*/
    /* border: 2px solid darkgray;*/
     border-radius: 8px !important;
-    color: white;
+    color: #25a519;
   }
   .application--light .card {
     padding: 1%;
-    background-color: #424242;
-    opacity: 0.8;
+    background-color: #ffffff;
+    opacity: 0.7;
     border: 0;
     text-align: center !important;
   }
   .location {
     background-color: transparent;
-    color: white;
+    color: #ff1313;
     border: 0;
     margin: 1% !important;
   }
   .label {
     margin-left: 5% !important;
     margin-right: 6% !important;
-    color: white;
+    color: #25a519;
   }
   .txt {
-    color: white;
+    color: #ff1313;
   }
   .time {
     padding: 10px;

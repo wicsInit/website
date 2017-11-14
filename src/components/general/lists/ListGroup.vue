@@ -34,4 +34,6 @@
       [componentConfig.listTile]: ListTile
     }
   }
+
 </script>
+
