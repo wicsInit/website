@@ -44,7 +44,7 @@
     data () {
       return {
         picker: null,
-        backgroundSrc: '/static/images/slc-large-min-bright.jpg'
+        backgroundSrc: '/static/images/x-mas/xmas-home.jpg'
       }
     },
     computed: {
@@ -54,9 +54,8 @@
       backgroundStyle () {
         return {
           'background-image': 'url("' + this.backgroundSrc + '")',
-          'background-size': 'cover',
-          'background-position': 'center center',
-          'background-repeat': 'no-repeat no-repeat'
+          'background-repeat': 'no-repeat no-repeat',
+          'background-attachment:': 'fixed'
         }
       }
     },
@@ -71,9 +70,14 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
   div.card__media__background[data-v-2a9b787a]{
-    opacity: 0.3;
+    /*opacity: 0.3;*/
+    width: 100%;
+    height: 100%;
   }
+
   .wics-logo-container {
     position: absolute;
     display: block;
